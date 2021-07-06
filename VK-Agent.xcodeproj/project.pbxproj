@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB3E26944EC4006D8451 /* AppDelegate.swift */; };
 		06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB4026944EC4006D8451 /* SceneDelegate.swift */; };
-		06BEFB4326944EC4006D8451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB4226944EC4006D8451 /* ViewController.swift */; };
 		06BEFB4626944EC4006D8451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4426944EC4006D8451 /* Main.storyboard */; };
 		06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4726944EC6006D8451 /* Assets.xcassets */; };
 		06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */; };
+		06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB5726946DB4006D8451 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06BEFB3B26944EC4006D8451 /* VK-Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BEFB3E26944EC4006D8451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BEFB4026944EC4006D8451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06BEFB4226944EC4006D8451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06BEFB4526944EC4006D8451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06BEFB4726944EC6006D8451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BEFB4A26944EC6006D8451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BEFB4C26944EC6006D8451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BEFB5726946DB4006D8451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		06BEFB3D26944EC4006D8451 /* VK-Agent */ = {
 			isa = PBXGroup;
 			children = (
-				06BEFB3E26944EC4006D8451 /* AppDelegate.swift */,
-				06BEFB4026944EC4006D8451 /* SceneDelegate.swift */,
-				06BEFB4226944EC4006D8451 /* ViewController.swift */,
+				06BEFB5526946CFC006D8451 /* Presentation */,
+				06BEFB5226946214006D8451 /* AppDelegate */,
 				06BEFB4426944EC4006D8451 /* Main.storyboard */,
-				06BEFB4726944EC6006D8451 /* Assets.xcassets */,
-				06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */,
-				06BEFB4C26944EC6006D8451 /* Info.plist */,
+				06BEFB5326946237006D8451 /* Resource */,
+				06BEFB5426946256006D8451 /* Config */,
 			);
 			path = "VK-Agent";
+			sourceTree = "<group>";
+		};
+		06BEFB5226946214006D8451 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				06BEFB3E26944EC4006D8451 /* AppDelegate.swift */,
+				06BEFB4026944EC4006D8451 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		06BEFB5326946237006D8451 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */,
+				06BEFB4726944EC6006D8451 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		06BEFB5426946256006D8451 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				06BEFB4C26944EC6006D8451 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		06BEFB5526946CFC006D8451 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				06BEFB5626946D30006D8451 /* login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		06BEFB5626946D30006D8451 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				06BEFB5726946DB4006D8451 /* LoginViewController.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06BEFB4326944EC4006D8451 /* ViewController.swift in Sources */,
+				06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95C35P9LHK;
-				INFOPLIST_FILE = "VK-Agent/Info.plist";
+				INFOPLIST_FILE = "VK-Agent/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95C35P9LHK;
-				INFOPLIST_FILE = "VK-Agent/Info.plist";
+				INFOPLIST_FILE = "VK-Agent/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
