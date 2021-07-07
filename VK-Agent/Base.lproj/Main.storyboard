@@ -55,7 +55,12 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUQ-ns-a93">
                                                 <rect key="frame" x="78" y="479" width="258" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Войти"/>
+                                                <connections>
+                                                    <action selector="loginButtonAction:" destination="anz-b7-VhI" eventType="touchUpInside" id="Z4a-Sn-pir"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -102,6 +107,16 @@
                             <constraint firstItem="5nH-cb-Vl8" firstAttribute="leading" secondItem="oiF-46-Wsf" secondAttribute="leading" id="w0l-G5-n59"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="MUQ-ns-a93" id="yev-T7-RK8"/>
+                        <outlet property="passwordTextField" destination="tLq-Rv-Zgj" id="eLf-cC-WlZ"/>
+                        <outlet property="scrollView" destination="5nH-cb-Vl8" id="OYl-4h-AZn"/>
+                        <outlet property="titleImageView" destination="mtO-FE-mB2" id="eM1-65-EGH"/>
+                        <outlet property="titleLabel" destination="ByL-ze-3vx" id="eQ1-tD-Dn5"/>
+                        <outlet property="titleLableUsername" destination="IPV-fo-CSq" id="ecw-yx-fJI"/>
+                        <outlet property="titlePassword" destination="myJ-7D-Hgp" id="f7T-sX-2Zu"/>
+                        <outlet property="usernameTextField" destination="LSe-nJ-G23" id="aV6-tt-Gbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZzP-CB-qQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +127,9 @@
         <image name="imageTOP" width="171" height="46"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
