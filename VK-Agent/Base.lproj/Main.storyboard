@@ -60,6 +60,7 @@
                                                 <state key="normal" title="Войти"/>
                                                 <connections>
                                                     <action selector="loginButtonAction:" destination="anz-b7-VhI" eventType="touchUpInside" id="Z4a-Sn-pir"/>
+                                                    <segue destination="sjp-gp-cqQ" kind="show" identifier="moveToOrange" id="Im6-Zf-V0N"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -122,6 +123,39 @@
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="-25.446428571428569"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BSg-os-INW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="sjp-gp-cqQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="go3-OZ-87G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp6-6E-GCR">
+                                <rect key="frame" x="149.5" y="415" width="115" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qh1-nr-pfx" kind="unwind" unwindAction="backToLoginScreen:" id="B3n-0p-25W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4w7-bR-uS4"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="pp6-6E-GCR" firstAttribute="centerX" secondItem="go3-OZ-87G" secondAttribute="centerX" id="bsQ-jQ-jWd"/>
+                            <constraint firstItem="pp6-6E-GCR" firstAttribute="centerY" secondItem="go3-OZ-87G" secondAttribute="centerY" id="kt3-gG-RaZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="npD-Ek-4W1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0e-cr-CK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="qh1-nr-pfx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="-25"/>
+        </scene>
     </scenes>
     <resources>
         <image name="imageTOP" width="171" height="46"/>
@@ -130,6 +164,12 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
