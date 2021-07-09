@@ -46,20 +46,36 @@ final class LoginViewController: UIViewController {
 
     }
     
-    @IBAction private func loginButtonAction(_ sender: UIButton) {
-        guard
-        let login = usernameTextField.text,
-        let password = passwordTextField.text
-        else {
-            print("Error login or password")
-            return
-        }
-        if (login == "admin") && (password == "1234"){
-            print("Добро пожаловать")
-        } else {
-            print("ошибка")
-        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+    }
+    
+    //Делать нам переход или не делать, добавляем обработку- проверку для перехода.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "moveToMain" {
+            guard
+            let login = usernameTextField.text,
+            let password = passwordTextField.text
+            else {
+                print("No login and password entered")
+                return false
+            }
+            if (login == "admin") && (password == "1234"){
+                print("Добро пожаловать")
+                return true
+            } else {
+                print("Error login or password")
+                return false
+            }
+            
+        }
+        return false
+    }
+    
+    @IBAction private func loginButtonAction(_ sender: UIButton) {
+       
+            print("Login buttton presset")
+               
         
     }
     

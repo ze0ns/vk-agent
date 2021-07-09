@@ -60,7 +60,7 @@
                                                 <state key="normal" title="Войти"/>
                                                 <connections>
                                                     <action selector="loginButtonAction:" destination="anz-b7-VhI" eventType="touchUpInside" id="Z4a-Sn-pir"/>
-                                                    <segue destination="5Bi-IH-ebS" kind="show" id="oLy-l5-owQ"/>
+                                                    <segue destination="5Bi-IH-ebS" kind="show" identifier="moveToMain" id="oLy-l5-owQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -132,20 +132,42 @@
         <!--groups-->
         <scene sceneID="Ucn-Hf-lXV">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Qoe-Rq-p61" sceneMemberID="viewController">
+                <viewController title="groups" modalPresentationStyle="fullScreen" id="Qoe-Rq-p61" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKX-0g-ZIk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MUE-Kw-kVr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="groups" image="person.2" catalog="system" selectedImage="person.2.fill" id="euq-Qj-btg"/>
+                    <navigationItem key="navigationItem" title="Группы" id="P9L-9K-E2o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="ivm-H7-Muc">
+                            <connections>
+                                <segue destination="uKY-2U-aPg" kind="show" id="nAP-M4-9NX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVk-IB-Zjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2729" y="334"/>
+            <point key="canvasLocation" x="3639.130434782609" y="333.48214285714283"/>
         </scene>
-        <!--frends-->
+        <!--Поиск группы-->
+        <scene sceneID="SrD-ri-say">
+            <objects>
+                <viewController id="uKY-2U-aPg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cch-ob-Vww">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cjJ-jI-0PK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Поиск группы" id="GMY-ZE-nFT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPU-Mz-wZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4457" y="333"/>
+        </scene>
+        <!--Список друзей-->
         <scene sceneID="D9n-nx-mng">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="4Ra-Wc-mTC" sceneMemberID="viewController">
@@ -155,11 +177,48 @@
                         <viewLayoutGuide key="safeArea" id="dvW-v2-xUp"/>
                         <color key="backgroundColor" red="0.79326053689604736" green="0.96437005042000523" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="frends" image="person" catalog="system" selectedImage="person.fill" id="zQS-qx-PMI"/>
+                    <navigationItem key="navigationItem" title="Список друзей" id="8f4-Nu-Xbz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9OK-at-71e">
+                            <connections>
+                                <segue destination="p1D-xo-nom" kind="show" id="Wt5-eE-T4Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kmo-7f-uVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2729" y="-393"/>
+            <point key="canvasLocation" x="3639.130434782609" y="-393.08035714285711"/>
+        </scene>
+        <!--Поиск друзей-->
+        <scene sceneID="Fkc-Bx-Oyu">
+            <objects>
+                <viewController id="p1D-xo-nom" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yuj-e0-sxD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QWR-HI-7zY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Поиск друзей" id="mrh-qZ-oSa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cA-hA-HLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4474" y="-1053"/>
+        </scene>
+        <!--Профиль пользователя-->
+        <scene sceneID="phB-zk-xNj">
+            <objects>
+                <viewController title="Профиль пользователя" id="llW-GZ-RhO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lll-UG-gd6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2cO-WA-4D2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYE-He-Cwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4457" y="-393"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HWX-yN-2t4">
@@ -172,13 +231,51 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4Ra-Wc-mTC" kind="relationship" relationship="viewControllers" id="0dP-Az-u4e"/>
-                        <segue destination="Qoe-Rq-p61" kind="relationship" relationship="viewControllers" id="RkM-K8-Sko"/>
+                        <segue destination="6d3-bh-UCl" kind="relationship" relationship="viewControllers" id="0dP-Az-u4e"/>
+                        <segue destination="ETL-1U-t1O" kind="relationship" relationship="viewControllers" id="RkM-K8-Sko"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZz-x3-0yk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1843" y="-24"/>
+        </scene>
+        <!--frends-->
+        <scene sceneID="pjv-Yo-gsP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6d3-bh-UCl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="frends" image="person" catalog="system" selectedImage="person.fill" id="zQS-qx-PMI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ef0-Iw-DlD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Ra-Wc-mTC" kind="relationship" relationship="rootViewController" id="bqO-0X-HKQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVV-kl-I0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.985507246377" y="-393.08035714285711"/>
+        </scene>
+        <!--groups-->
+        <scene sceneID="aGr-Hu-epz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ETL-1U-t1O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="groups" image="person.2" catalog="system" selectedImage="person.2.fill" id="euq-Qj-btg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z1p-e3-nbN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qoe-Rq-p61" kind="relationship" relationship="rootViewController" id="kPL-aJ-hKr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1K-19-hOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.985507246377" y="333.48214285714283"/>
         </scene>
     </scenes>
     <resources>
@@ -192,6 +289,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
