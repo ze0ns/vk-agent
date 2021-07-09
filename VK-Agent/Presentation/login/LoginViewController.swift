@@ -21,6 +21,9 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
+        let navbar = navigationController?.navigationBar
+        navbar?.isHidden = true
+        
     
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -35,8 +38,11 @@ final class LoginViewController: UIViewController {
         super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+      
     }
+    
     @IBAction func backToLoginScreen(_ segue: UIStoryboardSegue ){
+ 
 
     }
     
