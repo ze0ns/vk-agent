@@ -170,7 +170,7 @@
         <!--Список друзей-->
         <scene sceneID="D9n-nx-mng">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4Ra-Wc-mTC" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="4Ra-Wc-mTC" customClass="frendsViewController" customModule="VK_Agent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="siw-qE-cOZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
