@@ -57,14 +57,14 @@ final class LoginViewController: UIViewController {
             let login = usernameTextField.text,
             let password = passwordTextField.text
             else {
-                print("No login and password entered")
+                showErrorAlert(tittle: "Ошибка", message: "No login and password entered")
                 return false
             }
             if (login == "admin") && (password == "1234"){
                 print("Добро пожаловать")
                 return true
             } else {
-                print("Error login or password")
+                showErrorAlert(tittle: "Ошибка", message: "Не верные имя или пароль")
                 return false
             }
             
@@ -109,5 +109,16 @@ final class LoginViewController: UIViewController {
         let tapGestruru = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         scrollView.addGestureRecognizer(tapGestruru)
     }
+    
+    private func showErrorAlert(tittle: String, message: String){
+        let alert = UIAlertController(title: tittle, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { _ in
+            self.usernameTextField.text = ""
+            self.passwordTextField.text = ""
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
     
 }
