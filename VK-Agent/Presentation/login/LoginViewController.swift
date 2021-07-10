@@ -60,7 +60,7 @@ final class LoginViewController: UIViewController {
                 showErrorAlert(tittle: "Ошибка", message: "No login and password entered")
                 return false
             }
-            if (login == "admin") && (password == "1234"){
+            if (login == "") && (password == ""){
                 print("Добро пожаловать")
                 return true
             } else {
