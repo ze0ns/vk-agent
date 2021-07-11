@@ -39,7 +39,7 @@ extension findFrendsController: UITableViewDelegate, UITableViewDataSource {
     // настраиваем нашу ячейку (подробнее 1:00:00 занаятие 3)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: frendTableViewCell.reusedIdentifier, for: indexPath) as? frendTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: frendTableViewCell.reusedIdentifier, for: indexPath) as? frendTableViewCell //метод который позволяет переиспользовать ячейку. мы принудельно указали ему тип переменной - наш тип
         else {
             return UITableViewCell()
         }
