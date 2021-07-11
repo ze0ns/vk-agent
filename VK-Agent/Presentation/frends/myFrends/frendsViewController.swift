@@ -25,8 +25,24 @@ class frendsViewController: UIViewController {
         if segue.identifier == "moveToProfile"{
             segue.destination.title = "User Profile"
         }
-        
     }
+    
+    @IBAction func addFrends(_ segue: UIStoryboardSegue){
+        guard
+            segue.identifier == "addFrend",
+            let sourceController = segue.source as? findFrendsController,       //приведение к определенному типу
+            let indexPath = sourceController.tableView.indexPathForSelectedRow // Опеределили ячейку которую нажали
+            else {
+           return
+        }
+        let frend = sourceController.frends[indexPath.row]
+        
+        //Добавляем проверку, если друг с таким именем - не добавляем (func .contains)
+        if !frends.contains(where: {$0.name == frend.name}){
+            frends.append(frend)
+        }
+    }
+    
 }
 
 extension frendsViewController: UITableViewDelegate, UITableViewDataSource {

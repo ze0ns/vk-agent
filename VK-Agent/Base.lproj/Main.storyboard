@@ -362,7 +362,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-gy-5d3">
                                                     <rect key="frame" x="349" y="6" width="45" height="45"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="45" id="1U2-W2-Jh7"/>
+                                                        <constraint firstAttribute="width" priority="999" constant="45" id="1U2-W2-Jh7"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="BHe-Na-ugV"/>
                                                         <constraint firstAttribute="height" constant="45" id="E8m-nj-aEe"/>
                                                     </constraints>
@@ -407,6 +407,7 @@
                                             <outlet property="city" destination="WL6-VS-KYY" id="s7l-ch-jFP"/>
                                             <outlet property="frendMood" destination="Ec3-gy-5d3" id="PXb-Sh-1TC"/>
                                             <outlet property="frendName" destination="VzU-Mb-4W3" id="ZL2-Cb-ODX"/>
+                                            <segue destination="AEB-Ej-Zn8" kind="unwind" identifier="addFrend" unwindAction="addFrends:" id="AUh-U8-hUT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -427,6 +428,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cA-hA-HLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AEB-Ej-Zn8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4473.913043478261" y="-1053.3482142857142"/>
         </scene>
