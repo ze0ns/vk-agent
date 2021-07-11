@@ -9,14 +9,14 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    @IBOutlet private weak var titleImageView: UIImageView!
-    @IBOutlet private weak var scrollView: UIScrollView!
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var titleLableUsername: UILabel!
-    @IBOutlet private weak var titlePassword: UILabel!
-    @IBOutlet private weak var usernameTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-    @IBOutlet private weak var loginButton: UIButton!
+    @IBOutlet private var titleImageView: UIImageView!
+    @IBOutlet private var scrollView: UIScrollView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var titleLableUsername: UILabel!
+    @IBOutlet private var titlePassword: UILabel!
+    @IBOutlet private var usernameTextField: UITextField!
+    @IBOutlet private var passwordTextField: UITextField!
+    @IBOutlet private var loginButton: UIButton!
    
     override func viewDidLoad() {
         super.viewDidLoad()

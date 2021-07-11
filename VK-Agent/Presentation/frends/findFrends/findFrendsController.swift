@@ -8,7 +8,7 @@
 import UIKit
 final class findFrendsController: UIViewController{
   
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
     
     var frends = [frendModel]()
     

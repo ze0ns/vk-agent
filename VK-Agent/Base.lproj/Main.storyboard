@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -73,22 +72,22 @@
                                             <constraint firstItem="LSe-nJ-G23" firstAttribute="top" secondItem="IPV-fo-CSq" secondAttribute="bottom" constant="16.5" id="8tl-SO-4ba"/>
                                             <constraint firstItem="myJ-7D-Hgp" firstAttribute="centerX" secondItem="gJ1-w4-V9f" secondAttribute="centerX" id="9MR-yC-jxq"/>
                                             <constraint firstAttribute="trailing" secondItem="mtO-FE-mB2" secondAttribute="trailing" constant="87" id="FUc-HL-Rm7"/>
-                                            <constraint firstItem="tLq-Rv-Zgj" firstAttribute="trailing" secondItem="myJ-7D-Hgp" secondAttribute="trailing" id="JxX-mN-Kcj"/>
+                                            <constraint firstItem="tLq-Rv-Zgj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="myJ-7D-Hgp" secondAttribute="trailing" id="JxX-mN-Kcj"/>
                                             <constraint firstItem="LSe-nJ-G23" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IPV-fo-CSq" secondAttribute="trailing" id="K4u-wH-8nh"/>
                                             <constraint firstItem="tLq-Rv-Zgj" firstAttribute="top" secondItem="myJ-7D-Hgp" secondAttribute="bottom" constant="16" id="KDg-Ym-ANS"/>
                                             <constraint firstItem="MUQ-ns-a93" firstAttribute="centerX" secondItem="gJ1-w4-V9f" secondAttribute="centerX" id="Q5x-37-ig0"/>
                                             <constraint firstItem="LSe-nJ-G23" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IPV-fo-CSq" secondAttribute="leading" id="Qqd-BO-Ted"/>
                                             <constraint firstItem="MUQ-ns-a93" firstAttribute="top" secondItem="tLq-Rv-Zgj" secondAttribute="bottom" constant="49" id="RqP-TM-L6K"/>
-                                            <constraint firstItem="myJ-7D-Hgp" firstAttribute="leading" secondItem="LSe-nJ-G23" secondAttribute="leading" id="YTN-4O-KMp"/>
-                                            <constraint firstItem="MUQ-ns-a93" firstAttribute="trailing" secondItem="tLq-Rv-Zgj" secondAttribute="trailing" id="YWr-fr-ExP"/>
+                                            <constraint firstItem="myJ-7D-Hgp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LSe-nJ-G23" secondAttribute="leading" id="YTN-4O-KMp"/>
+                                            <constraint firstItem="MUQ-ns-a93" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tLq-Rv-Zgj" secondAttribute="trailing" id="YWr-fr-ExP"/>
                                             <constraint firstItem="ByL-ze-3vx" firstAttribute="centerX" secondItem="gJ1-w4-V9f" secondAttribute="centerX" id="eWs-Cr-OvS"/>
                                             <constraint firstItem="mtO-FE-mB2" firstAttribute="centerX" secondItem="gJ1-w4-V9f" secondAttribute="centerX" id="fo3-6x-q0M"/>
                                             <constraint firstItem="IPV-fo-CSq" firstAttribute="top" secondItem="ByL-ze-3vx" secondAttribute="bottom" constant="65" id="fqe-Xt-0h6"/>
                                             <constraint firstItem="IPV-fo-CSq" firstAttribute="centerX" secondItem="gJ1-w4-V9f" secondAttribute="centerX" id="gkE-ou-2Kp"/>
-                                            <constraint firstItem="tLq-Rv-Zgj" firstAttribute="leading" secondItem="myJ-7D-Hgp" secondAttribute="leading" id="hu1-fN-xk4"/>
+                                            <constraint firstItem="tLq-Rv-Zgj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="myJ-7D-Hgp" secondAttribute="leading" id="hu1-fN-xk4"/>
                                             <constraint firstItem="mtO-FE-mB2" firstAttribute="leading" secondItem="gJ1-w4-V9f" secondAttribute="leading" constant="87" id="i8m-pV-Riy"/>
-                                            <constraint firstItem="MUQ-ns-a93" firstAttribute="leading" secondItem="tLq-Rv-Zgj" secondAttribute="leading" id="llR-Pl-LV3"/>
-                                            <constraint firstItem="myJ-7D-Hgp" firstAttribute="trailing" secondItem="LSe-nJ-G23" secondAttribute="trailing" id="m9n-Xd-c0Q"/>
+                                            <constraint firstItem="MUQ-ns-a93" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tLq-Rv-Zgj" secondAttribute="leading" id="llR-Pl-LV3"/>
+                                            <constraint firstItem="myJ-7D-Hgp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LSe-nJ-G23" secondAttribute="trailing" id="m9n-Xd-c0Q"/>
                                             <constraint firstAttribute="bottom" secondItem="MUQ-ns-a93" secondAttribute="bottom" constant="36" id="oDx-e0-akR"/>
                                             <constraint firstItem="mtO-FE-mB2" firstAttribute="top" secondItem="gJ1-w4-V9f" secondAttribute="top" constant="52" id="ryy-bt-vfq"/>
                                             <constraint firstItem="ByL-ze-3vx" firstAttribute="top" secondItem="mtO-FE-mB2" secondAttribute="bottom" constant="47" id="vpy-uo-qGR"/>
@@ -141,59 +140,12 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Группы" id="P9L-9K-E2o">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ivm-H7-Muc">
-                            <connections>
-                                <segue destination="Koj-fD-QUy" kind="show" id="eaa-jd-Zmu"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ivm-H7-Muc"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVk-IB-Zjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3639.130434782609" y="333.48214285714283"/>
-        </scene>
-        <!--список групп-->
-        <scene sceneID="wJt-Pw-5I4">
-            <objects>
-                <collectionViewController id="Koj-fD-QUy" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nCC-i8-Yzm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wSA-sg-ETT">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cpb-Nf-XPd">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cmG-Ri-mVC">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xN3-BF-cnV">
-                                <rect key="frame" x="143" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8eU-zH-vnj">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="Koj-fD-QUy" id="xEI-yV-b0M"/>
-                            <outlet property="delegate" destination="Koj-fD-QUy" id="FdF-rJ-QAJ"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="список групп" id="BMh-LU-P4F"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sAD-mG-w5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4559" y="333"/>
         </scene>
         <!--Список друзей-->
         <scene sceneID="D9n-nx-mng">
@@ -316,6 +268,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="RAw-qa-WWY" id="CcM-OT-5MO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kmo-7f-uVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,7 +367,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Поиск друзей" id="mrh-qZ-oSa"/>
                     <connections>
-                        <outlet property="tableView" destination="nAa-11-nC9" id="Ygh-rE-gJD"/>
+                        <outlet property="tableView" destination="nAa-11-nC9" id="vGc-J4-a8q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cA-hA-HLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

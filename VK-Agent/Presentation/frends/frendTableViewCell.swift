@@ -11,7 +11,7 @@ final class frendTableViewCell: UITableViewCell {
     
     @IBOutlet private var avatarImageView: UIImageView!
     
-    @IBOutlet weak var frendMood: UIImageView!
+    @IBOutlet private var frendMood: UIImageView!
     
     @IBOutlet private var frendName: UILabel!
     @IBOutlet private var city: UILabel!

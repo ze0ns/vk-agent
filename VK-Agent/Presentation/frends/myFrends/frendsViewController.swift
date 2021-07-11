@@ -9,6 +9,7 @@ import UIKit
 
 class frendsViewController: UIViewController {
     
+    @IBOutlet private var tableView: UITableView!
     var frends: [frendModel] = []
     
     
@@ -40,6 +41,7 @@ class frendsViewController: UIViewController {
         //Добавляем проверку, если друг с таким именем - не добавляем (func .contains)
         if !frends.contains(where: {$0.name == frend.name}){
             frends.append(frend)
+            tableView.reloadData()
         }
     }
     
