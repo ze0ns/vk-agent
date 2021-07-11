@@ -1,35 +1,31 @@
 //
-//  frendsViewController.swift
+//  findFrendsController.swift
 //  VK-Agent
 //
-//  Created by Aleksandr Oschepkov on 09.07.2021.
+//  Created by zeons on 11.07.2021.
 //
 
 import UIKit
-
-class frendsViewController: UIViewController {
+final class findFrendsController: UIViewController{
+  
+    @IBOutlet weak var tableView: UITableView!
     
-    var frends: [frendModel] = []
-    
+    var frends = [frendModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Для примера при запуске мы вызываем наше хранилище со списком друзей и их профелей
+        frends = frendStorage().findFrends
+        //подпишем нашу вьюху на делегат и датасоурс вручную
+        //методы которые заставляют нашу таблицу работать
         
-        let storage = frendStorage()
-        frends = storage.frends
-
-        
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "moveToProfile"{
-            segue.destination.title = "User Profile"
-        }
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
+    
 }
 
-extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
+extension findFrendsController: UITableViewDelegate, UITableViewDataSource {
     //Определяем количество секций
     func numberOfSections(in tableView: UITableView) -> Int {
         1

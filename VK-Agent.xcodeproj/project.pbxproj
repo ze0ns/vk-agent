@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		068788762698813000B36F5A /* frendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068788752698813000B36F5A /* frendsViewController.swift */; };
+		06A52952269A8DFB0037B747 /* frendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52951269A8DFB0037B747 /* frendModel.swift */; };
+		06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52955269A8EA30037B747 /* frendProfileModel.swift */; };
+		06A52959269A90C50037B747 /* frendStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52958269A90C50037B747 /* frendStorage.swift */; };
+		06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5295A269AE2050037B747 /* frendTableViewCell.swift */; };
+		06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5295C269AF1220037B747 /* findFrendsController.swift */; };
 		06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB3E26944EC4006D8451 /* AppDelegate.swift */; };
 		06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB4026944EC4006D8451 /* SceneDelegate.swift */; };
 		06BEFB4626944EC4006D8451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4426944EC4006D8451 /* Main.storyboard */; };
@@ -18,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		068788752698813000B36F5A /* frendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendsViewController.swift; sourceTree = "<group>"; };
+		06A52951269A8DFB0037B747 /* frendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendModel.swift; sourceTree = "<group>"; };
+		06A52955269A8EA30037B747 /* frendProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendProfileModel.swift; sourceTree = "<group>"; };
+		06A52958269A90C50037B747 /* frendStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendStorage.swift; sourceTree = "<group>"; };
+		06A5295A269AE2050037B747 /* frendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendTableViewCell.swift; sourceTree = "<group>"; };
+		06A5295C269AF1220037B747 /* findFrendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findFrendsController.swift; sourceTree = "<group>"; };
 		06BEFB3B26944EC4006D8451 /* VK-Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BEFB3E26944EC4006D8451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BEFB4026944EC4006D8451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +54,7 @@
 			children = (
 				068788722698804500B36F5A /* findFrends */,
 				068788712698803900B36F5A /* myFrends */,
+				06A5295A269AE2050037B747 /* frendTableViewCell.swift */,
 			);
 			path = frends;
 			sourceTree = "<group>";
@@ -68,6 +79,7 @@
 		068788722698804500B36F5A /* findFrends */ = {
 			isa = PBXGroup;
 			children = (
+				06A5295C269AF1220037B747 /* findFrendsController.swift */,
 			);
 			path = findFrends;
 			sourceTree = "<group>";
@@ -84,6 +96,23 @@
 			children = (
 			);
 			path = findAndAddGroups;
+			sourceTree = "<group>";
+		};
+		06A52950269A8D900037B747 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				06A52951269A8DFB0037B747 /* frendModel.swift */,
+				06A52955269A8EA30037B747 /* frendProfileModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		06A52957269A908D0037B747 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				06A52958269A90C50037B747 /* frendStorage.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		06BEFB3226944EC3006D8451 = {
@@ -105,6 +134,8 @@
 		06BEFB3D26944EC4006D8451 /* VK-Agent */ = {
 			isa = PBXGroup;
 			children = (
+				06A52957269A908D0037B747 /* Repository */,
+				06A52950269A8D900037B747 /* models */,
 				06BEFB5526946CFC006D8451 /* Presentation */,
 				06BEFB5226946214006D8451 /* AppDelegate */,
 				06BEFB4426944EC4006D8451 /* Main.storyboard */,
@@ -229,7 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */,
+				06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */,
+				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
+				06A52959269A90C50037B747 /* frendStorage.swift in Sources */,
+				06A52952269A8DFB0037B747 /* frendModel.swift in Sources */,
+				06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */,
 				068788762698813000B36F5A /* frendsViewController.swift in Sources */,
 				06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */,
 			);

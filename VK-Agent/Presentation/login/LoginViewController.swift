@@ -21,10 +21,7 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
-        let navbar = navigationController?.navigationBar
-        navbar?.isHidden = true
-        
-    
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -60,8 +57,10 @@ final class LoginViewController: UIViewController {
                 showErrorAlert(tittle: "Ошибка", message: "No login and password entered")
                 return false
             }
-            if (login == "") && (password == ""){
-                print("Добро пожаловать")
+//            if (login == "admin") && (password == "1"){
+            if (login == "") && (password == "")
+            
+            {      print("Добро пожаловать")
                 return true
             } else {
                 showErrorAlert(tittle: "Ошибка", message: "Не верные имя или пароль")
