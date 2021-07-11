@@ -74,5 +74,15 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
         //пренудительно вызовем нашу сегу по иднетификатору
        // performSegue(withIdentifier: "moveToProfile", sender: nil)
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        //Если нажата кнопка - Удалить
+        if editingStyle == .delete{
+            //Удаляем город из масива
+            frends.remove(at: indexPath.row)
+            //Удаляем ячейку из таблицы
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     
 }
