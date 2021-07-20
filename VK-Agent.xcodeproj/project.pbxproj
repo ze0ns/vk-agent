@@ -11,6 +11,7 @@
 		0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD0269B64F00055B3F5 /* groupViewController.swift */; };
 		0697CDD3269B671E0055B3F5 /* groupsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD2269B671E0055B3F5 /* groupsCollectionViewCell.swift */; };
 		0697CDD5269B69DC0055B3F5 /* groupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD4269B69DC0055B3F5 /* groupModel.swift */; };
+		0697CDD726A73EE10055B3F5 /* groupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD626A73EE10055B3F5 /* groupStorage.swift */; };
 		06A52952269A8DFB0037B747 /* frendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52951269A8DFB0037B747 /* frendModel.swift */; };
 		06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52955269A8EA30037B747 /* frendProfileModel.swift */; };
 		06A52959269A90C50037B747 /* frendStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52958269A90C50037B747 /* frendStorage.swift */; };
@@ -29,6 +30,7 @@
 		0697CDD0269B64F00055B3F5 /* groupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupViewController.swift; sourceTree = "<group>"; };
 		0697CDD2269B671E0055B3F5 /* groupsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0697CDD4269B69DC0055B3F5 /* groupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupModel.swift; sourceTree = "<group>"; };
+		0697CDD626A73EE10055B3F5 /* groupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupStorage.swift; sourceTree = "<group>"; };
 		06A52951269A8DFB0037B747 /* frendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendModel.swift; sourceTree = "<group>"; };
 		06A52955269A8EA30037B747 /* frendProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendProfileModel.swift; sourceTree = "<group>"; };
 		06A52958269A90C50037B747 /* frendStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendStorage.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				06A52958269A90C50037B747 /* frendStorage.swift */,
+				0697CDD626A73EE10055B3F5 /* groupStorage.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */,
+				0697CDD726A73EE10055B3F5 /* groupStorage.swift in Sources */,
 				06A52959269A90C50037B747 /* frendStorage.swift in Sources */,
 				06A52952269A8DFB0037B747 /* frendModel.swift in Sources */,
 				06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */,

@@ -6,14 +6,16 @@
 //
 
 import UIKit
-final class groupsCollectionViewCell: UICollectionView{
+final class groupsCollectionViewCell: UICollectionViewCell{
     static let identifier = "groupsCollectionViewCell"
     
-    @IBOutlet weak var imageGroupView: UIImageView!
-    @IBOutlet weak var nameGroupLabel: UILabel!
-
+    @IBOutlet private var imageGroupView: UIImageView!
+    @IBOutlet private var nameGroupLabel: UILabel!
+    @IBOutlet private var cityGroupLabel: UILabel!
+    
     func configure(groups: groupModel){
         imageGroupView.image = UIImage(systemName: groups.avatar)
         nameGroupLabel.text = "\(groups.name)"
+        cityGroupLabel.text = "\(groups.nameCity)"
     }
 }

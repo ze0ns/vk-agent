@@ -10,4 +10,5 @@ import Foundation
 struct groupModel{
     var name: String
     var avatar: String
+    var nameCity: String
 }
