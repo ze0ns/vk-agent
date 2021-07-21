@@ -9,19 +9,19 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    @IBOutlet private weak var titleImageView: UIImageView!
-    @IBOutlet private weak var scrollView: UIScrollView!
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var titleLableUsername: UILabel!
-    @IBOutlet private weak var titlePassword: UILabel!
-    @IBOutlet private weak var usernameTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-    @IBOutlet private weak var loginButton: UIButton!
+    @IBOutlet private var titleImageView: UIImageView!
+    @IBOutlet private var scrollView: UIScrollView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var titleLableUsername: UILabel!
+    @IBOutlet private var titlePassword: UILabel!
+    @IBOutlet private var usernameTextField: UITextField!
+    @IBOutlet private var passwordTextField: UITextField!
+    @IBOutlet private var loginButton: UIButton!
    
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
-    
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,22 +35,46 @@ final class LoginViewController: UIViewController {
         super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+      
+    }
+    
+    @IBAction func backToLoginScreen(_ segue: UIStoryboardSegue ){
+ 
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
+    //Делать нам переход или не делать, добавляем обработку- проверку для перехода.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "moveToMain" {
+            guard
+            let login = usernameTextField.text,
+            let password = passwordTextField.text
+            else {
+                showErrorAlert(tittle: "Ошибка", message: "No login and password entered")
+                return false
+            }
+//            if (login == "admin") && (password == "1"){
+            if (login == "") && (password == "")
+            
+            {      print("Добро пожаловать")
+                return true
+            } else {
+                showErrorAlert(tittle: "Ошибка", message: "Не верные имя или пароль")
+                return false
+            }
+            
+        }
+        return false
     }
     
     @IBAction private func loginButtonAction(_ sender: UIButton) {
-        guard
-        let login = usernameTextField.text,
-        let password = passwordTextField.text
-        else {
-            print("Error login or password")
-            return
-        }
-        if (login == "admin") && (password == "1234"){
-            print("Добро пожаловать")
-        } else {
-            print("ошибка")
-        }
-        
+       
+            print("Login buttton presset")
+               
         
     }
     
@@ -84,5 +108,16 @@ final class LoginViewController: UIViewController {
         let tapGestruru = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         scrollView.addGestureRecognizer(tapGestruru)
     }
+    
+    private func showErrorAlert(tittle: String, message: String){
+        let alert = UIAlertController(title: tittle, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { _ in
+            self.usernameTextField.text = ""
+            self.passwordTextField.text = ""
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
     
 }
