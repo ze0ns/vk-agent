@@ -23,6 +23,7 @@
 		06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4726944EC6006D8451 /* Assets.xcassets */; };
 		06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */; };
 		06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB5726946DB4006D8451 /* LoginViewController.swift */; };
+		06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BA26A7BC83002229BD /* allGroupModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		06BEFB4A26944EC6006D8451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BEFB4C26944EC6006D8451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06BEFB5726946DB4006D8451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		06D5A7BA26A7BC83002229BD /* allGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allGroupModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 			children = (
 				068788722698804500B36F5A /* findFrends */,
 				068788712698803900B36F5A /* myFrends */,
-				06A5295A269AE2050037B747 /* frendTableViewCell.swift */,
 			);
 			path = frends;
 			sourceTree = "<group>";
@@ -70,6 +71,7 @@
 		068788712698803900B36F5A /* myFrends */ = {
 			isa = PBXGroup;
 			children = (
+				06A5295A269AE2050037B747 /* frendTableViewCell.swift */,
 				068788752698813000B36F5A /* frendsViewController.swift */,
 			);
 			path = myFrends;
@@ -98,6 +100,7 @@
 				06A52951269A8DFB0037B747 /* frendModel.swift */,
 				06A52955269A8EA30037B747 /* frendProfileModel.swift */,
 				0697CDD4269B69DC0055B3F5 /* groupModel.swift */,
+				06D5A7BA26A7BC83002229BD /* allGroupModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 		06BEFB5526946CFC006D8451 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				06D5A7B726A7BBDC002229BD /* allGroups */,
 				0697CDCF269B64CD0055B3F5 /* groups */,
 				0687886F2698801A00B36F5A /* frends */,
 				06BEFB5626946D30006D8451 /* login */,
@@ -183,6 +187,13 @@
 				06BEFB5726946DB4006D8451 /* LoginViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		06D5A7B726A7BBDC002229BD /* allGroups */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = allGroups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 				0697CDD5269B69DC0055B3F5 /* groupModel.swift in Sources */,
 				068788762698813000B36F5A /* frendsViewController.swift in Sources */,
 				06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */,
+				06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

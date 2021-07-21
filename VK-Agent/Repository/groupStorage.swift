@@ -8,26 +8,25 @@
 import Foundation
 class groupsStorage{
     let groups:[groupModel]
-    
+    let allGroups: [allGroupModel]
 
     init ()
     {
         groups = [
             groupModel(name: "Стив Джобс клубс", avatar: "stive", nameCity: "Пало-Альто"),
             groupModel(name: "Билл Гейтс клубс", avatar: "bill", nameCity: "Сиетл"),
-            groupModel(name: "Павел Дуров клубс", avatar: "pavel", nameCity: "Москва")
+            groupModel(name: "Павел Дуров клубс", avatar: "pavel", nameCity: "Москва"),
+            groupModel(name: "MaiklDell Cl", avatar: "maikl", nameCity: "Сиетл")
         ]
         
-//        findGroups = [
-//
-//            frendModel(name: "Стив Джобс", avatar: "stive", frendProfile: frendProfileModel(birthday: "24-02-1955", City: "Пало-Альто", mood: "good")),
-//            frendModel(name: "Билл Шейтс", avatar: "bill", frendProfile: frendProfileModel(birthday: "28-10-1955", City: "Сиетл", mood: "bad")),
-//            frendModel(name: "Павел Дуров", avatar: "pavel", frendProfile: frendProfileModel(birthday: "10-10-1984", City: "Москва", mood: "fine")),
-//            frendModel(name: "Арвид Кришна", avatar: "arvid", frendProfile: frendProfileModel(birthday: "24-02-1955", City: "Пало-Альто", mood: "good")),
-//            frendModel(name: "Рен Женфей", avatar: "ren", frendProfile: frendProfileModel(birthday: "28-10-1955", City: "Сиетл", mood: "bad")),
-//            frendModel(name: "Майкл Делл", avatar: "maikl", frendProfile: frendProfileModel(birthday: "10-10-1984", City: "Москва", mood: "fine"))
-//
-//
-//        ]
+        allGroups = [
+
+           allGroupModel(name: "Footbal club", avatar: "footbal", description: "Интересы по футболу"),
+           allGroupModel(name: "Dev club", avatar: "dev", description: "Интересы по программированию"),
+           allGroupModel(name: "Game club", avatar: "game", description: "Интересы по играм"),
+           allGroupModel(name: "Swimming club", avatar: "swimming", description: "Интересы по программированию"),
+           allGroupModel(name: "Basketball club", avatar: "basketball", description: "Интересы по играм")
+            
+        ]
     }
 }

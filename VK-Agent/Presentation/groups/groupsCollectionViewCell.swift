@@ -9,7 +9,8 @@ import UIKit
 final class groupsCollectionViewCell: UICollectionViewCell{
     static let identifier = "groupsCollectionViewCell"
     
-    @IBOutlet private var imageGroupView: UIImageView!
+
+    @IBOutlet  var imageGroupView: UIImageView!
     @IBOutlet private var nameGroupLabel: UILabel!
     @IBOutlet private var cityGroupLabel: UILabel!
     
