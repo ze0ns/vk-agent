@@ -43,10 +43,6 @@ extension findGroupController: UITableViewDelegate, UITableViewDataSource {
             }
             let group = allGroups [indexPath.row]
             cell.configure(allGroups: group)
-          
-            print(group.avatar)
-            print(group.name)
-            print(group.description)
             return cell
         }
         
