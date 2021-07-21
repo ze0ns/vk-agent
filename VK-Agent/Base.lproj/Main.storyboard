@@ -280,6 +280,7 @@
                                             <outlet property="descrAllGroupLabel" destination="7qQ-a3-r8o" id="40h-I4-0XU"/>
                                             <outlet property="imageAllGroupView" destination="1Gs-5j-y6G" id="SDk-zN-mgj"/>
                                             <outlet property="nameAllGroupLabel" destination="CgV-h6-ZVc" id="Uf1-ux-Ypq"/>
+                                            <segue destination="Z5G-4r-1qD" kind="unwind" unwindAction="addGroup:" id="oq3-9z-fdD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -300,6 +301,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZS9-c0-bSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Z5G-4r-1qD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4456.521739130435" y="332.8125"/>
         </scene>

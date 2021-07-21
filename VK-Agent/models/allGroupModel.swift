@@ -10,5 +10,5 @@ import Foundation
 struct allGroupModel{
     var name: String     //Название группы
     var avatar: String   //аватарка группы
-    var description: String  //Описание группы
+    var nameCity: String  //Описание группы
 }

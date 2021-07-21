@@ -18,7 +18,7 @@ final class groupsTableViewCell: UITableViewCell{
   
         imageAllGroupView.image = UIImage(named: allGroups.avatar)
         nameAllGroupLabel.text = "\(allGroups.name)"
-        descrAllGroupLabel.text = "\(allGroups.description)"
+        descrAllGroupLabel.text = "\(allGroups.nameCity)"
     
     }
 }

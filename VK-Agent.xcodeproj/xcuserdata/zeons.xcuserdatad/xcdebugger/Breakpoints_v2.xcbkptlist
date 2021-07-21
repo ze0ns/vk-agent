@@ -3,4 +3,54 @@
    uuid = "82DCFFAE-F535-4C35-8D0F-573CB7612EBF"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "189FEFD1-B9F5-4E6B-B065-51B78B1DFEE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK-Agent/Presentation/groups/groupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "addGroup(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "189FEFD1-B9F5-4E6B-B065-51B78B1DFEE8 - 70d2597d562d3dd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_Agent.groupViewController.addGroup(__C.UIStoryboardSegue) -&gt; ()"
+                  moduleName = "VK-Agent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeons/Desktop/GB/vk-agent/VK-Agent/Presentation/groups/groupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1710">
+               </Location>
+               <Location
+                  uuid = "189FEFD1-B9F5-4E6B-B065-51B78B1DFEE8 - 60ec60225c63765b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (VK_Agent.groupModel) -&gt; Swift.Bool in VK_Agent.groupViewController.addGroup(__C.UIStoryboardSegue) -&gt; ()"
+                  moduleName = "VK-Agent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zeons/Desktop/GB/vk-agent/VK-Agent/Presentation/groups/groupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -22,6 +22,23 @@ final class groupViewController: UIViewController{
         groups = storage.groups
         
     }
+    @IBAction func addGroup(_ segue: UIStoryboardSegue){
+        guard
+            segue.identifier == "addGroup",
+            let sourceController = segue.source as? findGroupController,       //приведение к определенному типу
+            let indexPath = sourceController.tableView.indexPathForSelectedRow // Опеределили ячейку которую нажали
+            else {
+           return
+        }
+        let myGroup = sourceController.allGroups[indexPath.row]
+        if !groups.contains(where: {$0.name == myGroup.name}){
+            //groups.append(myGroup)
+            collectionView.reloadData()
+            
+            
+        }
+    }
+    
 }
 
 extension groupViewController: UICollectionViewDelegate{

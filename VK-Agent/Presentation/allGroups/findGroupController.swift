@@ -21,7 +21,6 @@ final class findGroupController: UIViewController{
             segue.destination.title = "All Groups"
         }
     }
-    
 }
 extension findGroupController: UITableViewDelegate, UITableViewDataSource {
         //Определяем количество секций
@@ -48,7 +47,7 @@ extension findGroupController: UITableViewDelegate, UITableViewDataSource {
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             //пренудительно вызовем нашу сегу по иднетификатору
-            //performSegue(withIdentifier: "moveToAllGroup", sender: nil)
+          //performSegue(withIdentifier: "addGroup", sender: nil)
         }
     
     

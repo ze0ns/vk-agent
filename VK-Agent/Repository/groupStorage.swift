@@ -21,11 +21,11 @@ class groupsStorage{
         
         allGroups = [
 
-           allGroupModel(name: "Footbal club", avatar: "footbal", description: "Около футбола"),
-           allGroupModel(name: "Dev club", avatar: "dev", description: "Все для разраба"),
-           allGroupModel(name: "Game club", avatar: "game", description: "Интересы по играм"),
-           allGroupModel(name: "Swimming club", avatar: "swimming", description: "Плавание"),
-           allGroupModel(name: "Basketball club", avatar: "basketball", description: "Баскетбол")
+           allGroupModel(name: "Footbal club", avatar: "footbal", nameCity: "Около футбола"),
+           allGroupModel(name: "Dev club", avatar: "dev", nameCity: "Все для разраба"),
+           allGroupModel(name: "Game club", avatar: "game", nameCity: "Интересы по играм"),
+           allGroupModel(name: "Swimming club", avatar: "swimming", nameCity: "Плавание"),
+           allGroupModel(name: "Basketball club", avatar: "basketball", nameCity: "Баскетбол")
             
         ]
     }
