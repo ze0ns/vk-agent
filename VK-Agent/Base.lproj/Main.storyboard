@@ -277,6 +277,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="descrAllGroupLabel" destination="7qQ-a3-r8o" id="40h-I4-0XU"/>
                                             <outlet property="imageAllGroupView" destination="1Gs-5j-y6G" id="SDk-zN-mgj"/>
                                             <outlet property="nameAllGroupLabel" destination="CgV-h6-ZVc" id="Uf1-ux-Ypq"/>
                                         </connections>

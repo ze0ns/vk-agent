@@ -12,11 +12,13 @@ final class groupsTableViewCell: UITableViewCell{
 
     @IBOutlet private var imageAllGroupView: UIImageView!
     @IBOutlet private var nameAllGroupLabel: UILabel!
+    @IBOutlet private var descrAllGroupLabel: UILabel!
     
     func configure(allGroups: allGroupModel){
   
         imageAllGroupView.image = UIImage(named: allGroups.avatar)
         nameAllGroupLabel.text = "\(allGroups.name)"
+        descrAllGroupLabel.text = "\(allGroups.description)"
     
     }
 }
