@@ -15,7 +15,7 @@ final class groupsCollectionViewCell: UICollectionViewCell{
     @IBOutlet private var cityGroupLabel: UILabel!
     
     func configure(groups: groupModel){
-        imageGroupView.image = UIImage(systemName: groups.avatar)
+        imageGroupView.image = UIImage(named:groups.avatar)
         nameGroupLabel.text = "\(groups.name)"
         cityGroupLabel.text = "\(groups.nameCity)"
     }

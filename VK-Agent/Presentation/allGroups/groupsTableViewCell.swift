@@ -7,14 +7,15 @@
 
 import UIKit
 final class groupsTableViewCell: UITableViewCell{
-    static let identifier = "groupsTableViewCell"
+    static let reusedIdentifier = "groupsTableViewCell"
     
 
     @IBOutlet private var imageAllGroupView: UIImageView!
     @IBOutlet private var nameAllGroupLabel: UILabel!
     
     func configure(allGroups: allGroupModel){
-        imageAllGroupView.image = UIImage(systemName:allGroups.avatar)
+  
+        imageAllGroupView.image = UIImage(named: allGroups.avatar)
         nameAllGroupLabel.text = "\(allGroups.name)"
     
     }

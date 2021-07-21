@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06701DC326A7DA7D00C8DEBC /* findGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06701DC226A7DA7D00C8DEBC /* findGroupController.swift */; };
 		068788762698813000B36F5A /* frendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068788752698813000B36F5A /* frendsViewController.swift */; };
 		0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD0269B64F00055B3F5 /* groupViewController.swift */; };
 		0697CDD3269B671E0055B3F5 /* groupsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD2269B671E0055B3F5 /* groupsCollectionViewCell.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06701DC226A7DA7D00C8DEBC /* findGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = findGroupController.swift; path = "../../../../vk-agent/VK-Agent/Presentation/allGroups/findGroupController.swift"; sourceTree = "<group>"; };
 		068788752698813000B36F5A /* frendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendsViewController.swift; sourceTree = "<group>"; };
 		0697CDD0269B64F00055B3F5 /* groupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupViewController.swift; sourceTree = "<group>"; };
 		0697CDD2269B671E0055B3F5 /* groupsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */,
+				06701DC226A7DA7D00C8DEBC /* findGroupController.swift */,
 			);
 			path = allGroups;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */,
+				06701DC326A7DA7D00C8DEBC /* findGroupController.swift in Sources */,
 				06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */,
 				0697CDD726A73EE10055B3F5 /* groupStorage.swift in Sources */,
 				06A52959269A90C50037B747 /* frendStorage.swift in Sources */,
