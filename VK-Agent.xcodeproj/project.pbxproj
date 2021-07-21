@@ -24,6 +24,7 @@
 		06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */; };
 		06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB5726946DB4006D8451 /* LoginViewController.swift */; };
 		06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BA26A7BC83002229BD /* allGroupModel.swift */; };
+		06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		06BEFB4C26944EC6006D8451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06BEFB5726946DB4006D8451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		06D5A7BA26A7BC83002229BD /* allGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allGroupModel.swift; sourceTree = "<group>"; };
+		06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		06D5A7B726A7BBDC002229BD /* allGroups */ = {
 			isa = PBXGroup;
 			children = (
+				06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */,
 			);
 			path = allGroups;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */,
+				06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */,
 				0697CDD726A73EE10055B3F5 /* groupStorage.swift in Sources */,
 				06A52959269A90C50037B747 /* frendStorage.swift in Sources */,
 				06A52952269A8DFB0037B747 /* frendModel.swift in Sources */,
