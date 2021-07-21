@@ -32,11 +32,47 @@ final class groupViewController: UIViewController{
         }
         let myGroup = sourceController.allGroups[indexPath.row]
         if !groups.contains(where: {$0.name == myGroup.name}){
-            //groups.append(myGroup)
+            groups.append(myGroup)
             collectionView.reloadData()
             
             
         }
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        let group = groups[indexPath.item]
+
+        let questionController = UIAlertController(title: "Изменения", message: nil, preferredStyle: .alert)
+        //позже добавим функционал - отпкрыть группу
+        questionController.addAction(UIAlertAction(title: "Переименовать группу", style: .default, handler: {
+
+                (action:UIAlertAction!) -> Void in
+
+            let ac = UIAlertController(title: "Переименовать группу", message: nil, preferredStyle: .alert)
+            ac.addTextField(configurationHandler: nil)
+
+            ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            ac.addAction(UIAlertAction(title: "OK", style: .default) { [unowned self, ac] _ in
+                    let newName = ac.textFields![0] as! UITextField
+                        newName.text = group.name
+
+                    self.collectionView.reloadData() })
+
+                   //self.presentViewController(ac, animated: true, completion: nil)
+                    self.present(ac, animated: true, completion: nil)
+            }))
+
+           questionController.addAction(UIAlertAction(title: "Удалить группу", style: .default, handler: {
+
+                (action:UIAlertAction!) -> Void in
+
+                print("delete")
+                self.groups.remove(at: indexPath.item)
+                collectionView.reloadData()
+
+            }))
+
+            self.present(questionController, animated: true, completion: nil)
     }
     
 }
@@ -58,5 +94,5 @@ extension groupViewController:UICollectionViewDataSource{
         return cell
     }
     
-    
+   
 }

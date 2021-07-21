@@ -6,7 +6,7 @@ import UIKit
 final class findGroupController: UIViewController{
   
 
-    var allGroups: [allGroupModel] = []
+    var allGroups: [groupModel] = []
     
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {

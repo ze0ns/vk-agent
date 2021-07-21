@@ -8,7 +8,7 @@
 import Foundation
 class groupsStorage{
     let groups:[groupModel]
-    let allGroups: [allGroupModel]
+    let allGroups: [groupModel]
 
     init ()
     {
@@ -21,11 +21,11 @@ class groupsStorage{
         
         allGroups = [
 
-           allGroupModel(name: "Footbal club", avatar: "footbal", nameCity: "Около футбола"),
-           allGroupModel(name: "Dev club", avatar: "dev", nameCity: "Все для разраба"),
-           allGroupModel(name: "Game club", avatar: "game", nameCity: "Интересы по играм"),
-           allGroupModel(name: "Swimming club", avatar: "swimming", nameCity: "Плавание"),
-           allGroupModel(name: "Basketball club", avatar: "basketball", nameCity: "Баскетбол")
+            groupModel(name: "Footbal club", avatar: "footbal", nameCity: "Около футбола"),
+            groupModel(name: "Dev club", avatar: "dev", nameCity: "Все для разраба"),
+            groupModel(name: "Game club", avatar: "game", nameCity: "Интересы по играм"),
+            groupModel(name: "Swimming club", avatar: "swimming", nameCity: "Плавание"),
+            groupModel(name: "Basketball club", avatar: "basketball", nameCity: "Баскетбол")
             
         ]
     }

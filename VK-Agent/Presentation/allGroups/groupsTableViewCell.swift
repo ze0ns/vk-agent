@@ -14,7 +14,7 @@ final class groupsTableViewCell: UITableViewCell{
     @IBOutlet private var nameAllGroupLabel: UILabel!
     @IBOutlet private var descrAllGroupLabel: UILabel!
     
-    func configure(allGroups: allGroupModel){
+    func configure(allGroups: groupModel){
   
         imageAllGroupView.image = UIImage(named: allGroups.avatar)
         nameAllGroupLabel.text = "\(allGroups.name)"

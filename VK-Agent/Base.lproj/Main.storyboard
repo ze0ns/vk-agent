@@ -280,7 +280,7 @@
                                             <outlet property="descrAllGroupLabel" destination="7qQ-a3-r8o" id="40h-I4-0XU"/>
                                             <outlet property="imageAllGroupView" destination="1Gs-5j-y6G" id="SDk-zN-mgj"/>
                                             <outlet property="nameAllGroupLabel" destination="CgV-h6-ZVc" id="Uf1-ux-Ypq"/>
-                                            <segue destination="Z5G-4r-1qD" kind="unwind" unwindAction="addGroup:" id="oq3-9z-fdD"/>
+                                            <segue destination="Z5G-4r-1qD" kind="unwind" identifier="addGroup" unwindAction="addGroup:" id="oq3-9z-fdD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -574,6 +574,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6d3-bh-UCl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="frends" image="person" catalog="system" selectedImage="person.fill" id="zQS-qx-PMI"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="v2i-Ql-23b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ef0-Iw-DlD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
