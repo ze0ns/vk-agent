@@ -26,6 +26,7 @@
 		06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB5726946DB4006D8451 /* LoginViewController.swift */; };
 		06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BA26A7BC83002229BD /* allGroupModel.swift */; };
 		06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */; };
+		06D9EBE326AA569500C5216A /* customViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D9EBE226AA569500C5216A /* customViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		06BEFB5726946DB4006D8451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		06D5A7BA26A7BC83002229BD /* allGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allGroupModel.swift; sourceTree = "<group>"; };
 		06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsTableViewCell.swift; sourceTree = "<group>"; };
+		06D9EBE226AA569500C5216A /* customViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		06BEFB3D26944EC4006D8451 /* VK-Agent */ = {
 			isa = PBXGroup;
 			children = (
+				06D9EBE126AA568100C5216A /* customView */,
 				06A52957269A908D0037B747 /* Repository */,
 				06A52950269A8D900037B747 /* models */,
 				06BEFB5526946CFC006D8451 /* Presentation */,
@@ -200,6 +203,14 @@
 				06701DC226A7DA7D00C8DEBC /* findGroupController.swift */,
 			);
 			path = allGroups;
+			sourceTree = "<group>";
+		};
+		06D9EBE126AA568100C5216A /* customView */ = {
+			isa = PBXGroup;
+			children = (
+				06D9EBE226AA569500C5216A /* customViewTest.swift */,
+			);
+			path = customView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D9EBE326AA569500C5216A /* customViewTest.swift in Sources */,
 				06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */,
 				0697CDD3269B671E0055B3F5 /* groupsCollectionViewCell.swift in Sources */,
 				06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */,

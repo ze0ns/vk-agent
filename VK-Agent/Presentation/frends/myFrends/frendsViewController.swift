@@ -72,7 +72,7 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //пренудительно вызовем нашу сегу по иднетификатору
-        performSegue(withIdentifier: "moveToProfile", sender: nil)
+      //  performSegue(withIdentifier: "moveToProfile", sender: nil)
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //Если нажата кнопка - Удалить

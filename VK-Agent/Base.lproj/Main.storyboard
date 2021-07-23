@@ -537,11 +537,25 @@
         <scene sceneID="phB-zk-xNj">
             <objects>
                 <viewController title="userProfile" id="llW-GZ-RhO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lll-UG-gd6">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="qD7-8n-7gS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="2cO-WA-4D2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3E-ze-cLr" customClass="customViewTest" customModule="VK_Agent" customModuleProvider="target">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PSy-Ff-W9x"/>
+                                    <constraint firstAttribute="height" constant="200" id="qJr-M9-ARF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FmV-8W-ksk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M3E-ze-cLr" firstAttribute="centerY" secondItem="qD7-8n-7gS" secondAttribute="centerY" id="0Va-bN-rWB"/>
+                            <constraint firstItem="M3E-ze-cLr" firstAttribute="centerX" secondItem="qD7-8n-7gS" secondAttribute="centerX" id="YP4-2F-teL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rAH-XO-SqH"/>
                 </viewController>
@@ -629,6 +643,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
