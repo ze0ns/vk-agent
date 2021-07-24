@@ -7,6 +7,7 @@
 
 import UIKit
 class customViewTest: UIView{
+    let gradientLayer = CAGradientLayer()  //Создаем градиент слой
     
     //когда хотим добавить статические элементы
     override init(frame: CGRect) {
@@ -27,6 +28,8 @@ class customViewTest: UIView{
     //Вызывается когда размеры макета подсчитаны и установлены , когда система уже подсчитала все что вы разместили на сториборд
     override func layoutSubviews() {
         super.layoutSubviews()
+        gradientLayer.frame = bounds //Ограничиваем градиент фарейм внутренними размерами слоя
+        
         layer.cornerRadius = 10 //округляем вьюшку по краям указывая радиус
         layer.masksToBounds = false  //обрезаем по слою
         layer.borderWidth = 3
@@ -37,6 +40,12 @@ class customViewTest: UIView{
         layer.shadowColor = UIColor.green.cgColor//CGColor(gray: 2, alpha: 1) //цвет тени, например в оттенке серого
         layer.shadowOpacity = 0.5 //указываем прозрачность тени
         layer.shadowRadius = 10 //радиус тени
+        
+        gradientLayer.colors = [UIColor.yellow.cgColor, UIColor.white.cgColor] //указываем цвета градиента
+        gradientLayer.locations = [0 as NSNumber,1 as NSNumber] // локации , где проходят цвета
+        gradientLayer.startPoint = CGPoint.zero
+        gradientLayer.endPoint = CGPoint(x:0, y:1) //указываем направление относительно вьюшки
+        layer.addSublayer(gradientLayer)
     }
     
     override func draw(_ rect: CGRect) {
