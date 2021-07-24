@@ -53,7 +53,7 @@ final class groupViewController: UIViewController{
 
             ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             ac.addAction(UIAlertAction(title: "OK", style: .default) { [unowned self, ac] _ in
-                    let newName = ac.textFields![0] as! UITextField
+                    let newName = ac.textFields![0]
                         newName.text = group.name
 
                     self.collectionView.reloadData() })

@@ -46,6 +46,8 @@ class customViewTest: UIView{
         gradientLayer.startPoint = CGPoint.zero
         gradientLayer.endPoint = CGPoint(x:0, y:1) //указываем направление относительно вьюшки
         layer.addSublayer(gradientLayer)
+        
+        setGestures()
     }
     
     override func draw(_ rect: CGRect) {
@@ -64,8 +66,36 @@ class customViewTest: UIView{
         context.setLineWidth(5)
         context.closePath()
         context.strokePath()
+                
+    }
+    
+    //Создадим метод обрабатывающий жесты на нацей view
+    private func setGestures(){
+        let tap =  UITapGestureRecognizer(target: self, action: #selector(viewTapped))  //создаем сам жест, действия в методе viewTapped
+        addGestureRecognizer(tap)
+        
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(viewOnSwipe))
+        swipe.direction = .down
+        addGestureRecognizer(swipe)
+        
+        let rotate = UIRotationGestureRecognizer(target: self, action: #selector(viewRotate))
+        addGestureRecognizer(rotate)
         
         
+    }
+    @objc private func viewTapped(){
+        let scele = CGAffineTransform(scaleX: 0.8, y: 0.8) //Уменьшили размер
+        let translation = CGAffineTransform(translationX: 0, y: -200) //Сдвинем вверх на 200
+        transform = scele.concatenating(translation)//объеденили 2 действия по 1 жесту
         
+    }
+    
+    @objc private func viewOnSwipe(){
+        let translation = CGAffineTransform(translationX: 0, y: 200) //Сдвинем вниз на 200
+        transform = translation
+    }
+    @objc private func viewRotate(){
+        let rotate = CGAffineTransform(rotationAngle: 90)
+        self.transform = rotate
     }
 }
