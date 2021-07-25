@@ -43,22 +43,24 @@ extension frendProfileController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
-    //Определяем количество ячеек . Ячеек у нас будет столько же , сколько друзей.
+    //Определяем количество ячеек . Ячеек у нас будет столько же , сколько новостей.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         news.count //количество новостей
     }
     
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: newsTableViewCell.reusedIdentifier, for: indexPath) as? newsTableViewCell
-        else {
-            return UITableViewCell()
-        }
+//        guard
+//            let cell = tableView.dequeueReusableCell(withIdentifier: newsTableViewCell.reusedIdentifier, for: indexPath) as? newsTableViewCell //метод который позволяет переиспользовать ячейку. мы принудельно указали ему тип переменной - наш тип
+//        else {
+//            return UITableViewCell()
+//        }
         let newsText = news[indexPath.row]
-        cell.configure(news: newsText)
-        print(newsText)
+//        cell.configure(news: newsText)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newsTableViewCell", for: indexPath)
+        cell.textLabel?.text = "News: \(newsText.newsText)"
+      
         return cell
     }
-    
 
 }
