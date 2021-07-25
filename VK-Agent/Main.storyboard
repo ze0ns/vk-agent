@@ -590,6 +590,58 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="50" estimatedSectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="AyX-iw-qGy">
+                                <rect key="frame" x="0.0" y="209" width="414" height="604"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsTableViewCell" rowHeight="103" id="eYV-Zw-aD3" customClass="newsTableViewCell" customModule="VK_Agent" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eYV-Zw-aD3" id="MZ6-oZ-oZi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcN-dB-hSb" customClass="likeControl" customModule="VK_Agent" customModuleProvider="target">
+                                                    <rect key="frame" x="374" y="72" width="20" height="20"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="CR7-C6-feM"/>
+                                                        <constraint firstAttribute="height" constant="20" id="Nnw-52-l4K"/>
+                                                    </constraints>
+                                                </view>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OZD-BL-5oA">
+                                                    <rect key="frame" x="20" y="0.0" width="394" height="73"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2d-Iu-Cbw">
+                                                    <rect key="frame" x="20" y="81" width="68" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="OZD-BL-5oA" secondAttribute="trailing" id="LJX-Xm-JjO"/>
+                                                <constraint firstItem="OZD-BL-5oA" firstAttribute="leading" secondItem="MZ6-oZ-oZi" secondAttribute="leading" constant="20" symbolic="YES" id="Uvg-NH-ReI"/>
+                                                <constraint firstItem="XcN-dB-hSb" firstAttribute="bottom" secondItem="MZ6-oZ-oZi" secondAttribute="bottomMargin" id="bCs-Y4-TPp"/>
+                                                <constraint firstAttribute="bottom" secondItem="OZD-BL-5oA" secondAttribute="bottom" constant="30" id="fZa-5a-vao"/>
+                                                <constraint firstItem="XcN-dB-hSb" firstAttribute="trailing" secondItem="MZ6-oZ-oZi" secondAttribute="trailingMargin" id="fnw-Xn-Qjl"/>
+                                                <constraint firstItem="OZD-BL-5oA" firstAttribute="top" secondItem="MZ6-oZ-oZi" secondAttribute="top" id="mp8-Ij-iMy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateOfNews" destination="Q2d-Iu-Cbw" id="gz1-Pf-auw"/>
+                                            <outlet property="newsLabel" destination="OZD-BL-5oA" id="2IW-Ox-vfP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FmV-8W-ksk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -604,6 +656,7 @@
                         <outlet property="imageName" destination="DxV-fz-UAb" id="4Xv-Ka-cyw"/>
                         <outlet property="liveCityLabel" destination="sHt-s9-Wpx" id="Aan-RQ-lTI"/>
                         <outlet property="nameTest" destination="RCP-Ni-3Xo" id="MP8-u0-zD7"/>
+                        <outlet property="tableView" destination="AyX-iw-qGy" id="RVA-fb-I91"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYE-He-Cwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
