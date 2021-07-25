@@ -20,7 +20,7 @@ final class frendProfileController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+  
         let storage = frendStorage()
         let newsStorege = newsStorage()
         myFrend = storage.frends
