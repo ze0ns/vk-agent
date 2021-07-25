@@ -11,7 +11,8 @@ class frendsViewController: UIViewController {
     
     @IBOutlet  var tableView: UITableView!
     var frends: [frendModel] = []
-    var myFrend: [frendModel] = []
+    
+    var rows = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class frendsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 guard segue.identifier == "moveToProfile" else { return }
                 guard let destination = segue.destination as? frendProfileController else { return }
-              destination.myFrend = frend
+              destination.frendRow = rows
     }
 
     @IBAction func addFrends(_ segue: UIStoryboardSegue){
@@ -72,7 +73,8 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        myFrend = frends[indexPath.item]
+       rows = indexPath.row
+        print(rows)
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //Если нажата кнопка - Удалить
