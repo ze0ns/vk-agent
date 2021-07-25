@@ -9,9 +9,9 @@ import UIKit
 
 class frendsViewController: UIViewController {
     
-    @IBOutlet private var tableView: UITableView!
+    @IBOutlet  var tableView: UITableView!
     var frends: [frendModel] = []
-    
+    var myFrend: [frendModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +22,13 @@ class frendsViewController: UIViewController {
 
         
     }
+    //определяем параметры для передачи в следующий контроллер по идентификатору сигвея
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "moveToProfile"{
-            segue.destination.title = "User Profile"
-        }
+                guard segue.identifier == "moveToProfile" else { return }
+                guard let destination = segue.destination as? frendProfileController else { return }
+              destination.myFrend = frend
     }
-    
+
     @IBAction func addFrends(_ segue: UIStoryboardSegue){
         guard
             segue.identifier == "addFrend",
@@ -71,8 +72,7 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //пренудительно вызовем нашу сегу по иднетификатору
-      //  performSegue(withIdentifier: "moveToProfile", sender: nil)
+        myFrend = frends[indexPath.item]
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //Если нажата кнопка - Удалить

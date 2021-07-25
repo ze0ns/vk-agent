@@ -50,7 +50,7 @@ extension findFrendsController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //пренудительно вызовем нашу сегу по иднетификатору
-       // performSegue(withIdentifier: "moveToProfile", sender: nil)
+  //  performSegue(withIdentifier: "moveToProfile", sender: tableView.cellForRow(at: indexPath))
     }
     
 }

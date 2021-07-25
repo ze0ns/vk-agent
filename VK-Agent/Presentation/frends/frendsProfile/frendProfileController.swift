@@ -8,9 +8,14 @@ import UIKit
 final class frendProfileController: UIViewController{
   
     
+    var myFrend: [frendModel] = []
+    
+    @IBOutlet var nameTest: UILabel!
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+        print(myFrend)
     }
-    
+ 
 }
