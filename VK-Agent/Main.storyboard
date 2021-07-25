@@ -536,32 +536,38 @@
         <!--userProfile-->
         <scene sceneID="phB-zk-xNj">
             <objects>
-                <viewController title="userProfile" id="llW-GZ-RhO" sceneMemberID="viewController">
+                <viewController title="userProfile" id="llW-GZ-RhO" customClass="frendProfileController" customModule="VK_Agent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="qD7-8n-7gS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3E-ze-cLr" customClass="customViewTest" customModule="VK_Agent" customModuleProvider="target">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3E-ze-cLr" customClass="avatarView" customModule="VK_Agent" customModuleProvider="target">
+                                <rect key="frame" x="20" y="101" width="100" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arvid" translatesAutoresizingMaskIntoConstraints="NO" id="DxV-fz-UAb" customClass="avatatImage" customModule="VK_Agent" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="PSy-Ff-W9x"/>
-                                    <constraint firstAttribute="height" constant="200" id="qJr-M9-ARF"/>
+                                    <constraint firstAttribute="width" constant="100" id="PSy-Ff-W9x"/>
+                                    <constraint firstAttribute="height" constant="100" id="qJr-M9-ARF"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FmV-8W-ksk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="M3E-ze-cLr" firstAttribute="centerY" secondItem="qD7-8n-7gS" secondAttribute="centerY" id="0Va-bN-rWB"/>
-                            <constraint firstItem="M3E-ze-cLr" firstAttribute="centerX" secondItem="qD7-8n-7gS" secondAttribute="centerX" id="YP4-2F-teL"/>
+                            <constraint firstItem="M3E-ze-cLr" firstAttribute="centerY" secondItem="qD7-8n-7gS" secondAttribute="centerY" constant="-297" id="0Va-bN-rWB"/>
+                            <constraint firstItem="M3E-ze-cLr" firstAttribute="centerX" secondItem="qD7-8n-7gS" secondAttribute="centerX" constant="-137" id="YP4-2F-teL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rAH-XO-SqH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYE-He-Cwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4457" y="-393"/>
+            <point key="canvasLocation" x="4456.521739130435" y="-393.08035714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HWX-yN-2t4">
@@ -623,6 +629,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arvid" width="275" height="183"/>
         <image name="dev" width="346" height="146"/>
         <image name="imageTOP" width="171" height="46"/>
         <image name="person" catalog="system" width="128" height="117"/>

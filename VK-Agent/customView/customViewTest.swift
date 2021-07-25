@@ -1,4 +1,4 @@
-//
+//  
 //  customViewTest.swift
 //  VK-Agent
 //
@@ -50,24 +50,27 @@ class customViewTest: UIView{
         setGestures()
     }
     
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        guard let context1 = UIGraphicsGetCurrentContext(),let context = UIGraphicsGetCurrentContext()
-        else {
-            return
-        }
-        context1.fill(CGRect(x: 20, y: 20, width: 160, height: 160)) //мы рисуем квадрат 50 на 50 и заполняем его
-        context.setStrokeColor(UIColor.yellow.cgColor)
-        context.move(to: CGPoint(x: 30, y: 30))
-        context.addLine(to: CGPoint(x: 170, y: 30))
-        context.addLine(to: CGPoint(x: 170, y: 170))
-        context.addLine(to: CGPoint(x: 30, y: 170))
-        context.addLine(to: CGPoint(x: 30, y: 30))
-        context.setLineWidth(5)
-        context.closePath()
-        context.strokePath()
-                
-    }
+//    override func draw(_ rect: CGRect) {
+//        super.draw(rect)
+//        guard let context1 = UIGraphicsGetCurrentContext(),let context = UIGraphicsGetCurrentContext()
+//        else {
+//            return
+//        }
+//        //context1.fill(CGRect(x: 20, y: 20, width: 160, height: 160)) //мы рисуем квадрат 50 на 50 и заполняем его
+//        context1.fill(CGRect(origin: <#T##CGPoint#>, size: <#T##CGSize#>))
+//        layer.cornerRadius = 9
+//
+//        context.setStrokeColor(UIColor.yellow.cgColor)
+//        context.move(to: CGPoint(x: 30, y: 30))
+//        context.addLine(to: CGPoint(x: 170, y: 30))
+//        context.addLine(to: CGPoint(x: 170, y: 170))
+//        context.addLine(to: CGPoint(x: 30, y: 170))
+//        context.addLine(to: CGPoint(x: 30, y: 30))
+//        context.setLineWidth(5)
+//        context.closePath()
+//        context.strokePath()
+//
+//    }
     
     //Создадим метод обрабатывающий жесты на нацей view
     private func setGestures(){

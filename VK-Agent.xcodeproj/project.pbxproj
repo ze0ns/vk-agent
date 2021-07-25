@@ -20,10 +20,13 @@
 		06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5295C269AF1220037B747 /* findFrendsController.swift */; };
 		06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB3E26944EC4006D8451 /* AppDelegate.swift */; };
 		06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB4026944EC4006D8451 /* SceneDelegate.swift */; };
-		06BEFB4626944EC4006D8451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4426944EC4006D8451 /* Main.storyboard */; };
 		06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4726944EC6006D8451 /* Assets.xcassets */; };
 		06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */; };
 		06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB5726946DB4006D8451 /* LoginViewController.swift */; };
+		06C786FE26AD452900F755D3 /* avatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C786FD26AD452900F755D3 /* avatarView.swift */; };
+		06C7870026AD492500F755D3 /* avatatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C786FF26AD492500F755D3 /* avatatImage.swift */; };
+		06C7870326AD49FB00F755D3 /* frendProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7870226AD49FB00F755D3 /* frendProfileController.swift */; };
+		06C7870526AD689000F755D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C7870426AD689000F755D3 /* Main.storyboard */; };
 		06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BA26A7BC83002229BD /* allGroupModel.swift */; };
 		06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */; };
 		06D9EBE326AA569500C5216A /* customViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D9EBE226AA569500C5216A /* customViewTest.swift */; };
@@ -44,11 +47,14 @@
 		06BEFB3B26944EC4006D8451 /* VK-Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BEFB3E26944EC4006D8451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BEFB4026944EC4006D8451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06BEFB4526944EC4006D8451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06BEFB4726944EC6006D8451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BEFB4A26944EC6006D8451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BEFB4C26944EC6006D8451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06BEFB5726946DB4006D8451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		06C786FD26AD452900F755D3 /* avatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarView.swift; sourceTree = "<group>"; };
+		06C786FF26AD492500F755D3 /* avatatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatatImage.swift; sourceTree = "<group>"; };
+		06C7870226AD49FB00F755D3 /* frendProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendProfileController.swift; sourceTree = "<group>"; };
+		06C7870426AD689000F755D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		06D5A7BA26A7BC83002229BD /* allGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allGroupModel.swift; sourceTree = "<group>"; };
 		06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsTableViewCell.swift; sourceTree = "<group>"; };
 		06D9EBE226AA569500C5216A /* customViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewTest.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		0687886F2698801A00B36F5A /* frends */ = {
 			isa = PBXGroup;
 			children = (
+				06C7870126AD49E400F755D3 /* frendsProfile */,
 				068788722698804500B36F5A /* findFrends */,
 				068788712698803900B36F5A /* myFrends */,
 			);
@@ -139,12 +146,12 @@
 		06BEFB3D26944EC4006D8451 /* VK-Agent */ = {
 			isa = PBXGroup;
 			children = (
+				06C7870426AD689000F755D3 /* Main.storyboard */,
 				06D9EBE126AA568100C5216A /* customView */,
 				06A52957269A908D0037B747 /* Repository */,
 				06A52950269A8D900037B747 /* models */,
 				06BEFB5526946CFC006D8451 /* Presentation */,
 				06BEFB5226946214006D8451 /* AppDelegate */,
-				06BEFB4426944EC4006D8451 /* Main.storyboard */,
 				06BEFB5326946237006D8451 /* Resource */,
 				06BEFB5426946256006D8451 /* Config */,
 			);
@@ -194,6 +201,16 @@
 				06BEFB5726946DB4006D8451 /* LoginViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		06C7870126AD49E400F755D3 /* frendsProfile */ = {
+			isa = PBXGroup;
+			children = (
+				06C786FD26AD452900F755D3 /* avatarView.swift */,
+				06C786FF26AD492500F755D3 /* avatatImage.swift */,
+				06C7870226AD49FB00F755D3 /* frendProfileController.swift */,
+			);
+			path = frendsProfile;
 			sourceTree = "<group>";
 		};
 		06D5A7B726A7BBDC002229BD /* allGroups */ = {
@@ -270,9 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C7870526AD689000F755D3 /* Main.storyboard in Resources */,
 				06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */,
 				06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */,
-				06BEFB4626944EC4006D8451 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +307,13 @@
 				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */,
+				06C7870326AD49FB00F755D3 /* frendProfileController.swift in Sources */,
 				06701DC326A7DA7D00C8DEBC /* findGroupController.swift in Sources */,
+				06C7870026AD492500F755D3 /* avatatImage.swift in Sources */,
 				06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */,
 				0697CDD726A73EE10055B3F5 /* groupStorage.swift in Sources */,
 				06A52959269A90C50037B747 /* frendStorage.swift in Sources */,
+				06C786FE26AD452900F755D3 /* avatarView.swift in Sources */,
 				06A52952269A8DFB0037B747 /* frendModel.swift in Sources */,
 				06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */,
 				0697CDD5269B69DC0055B3F5 /* groupModel.swift in Sources */,
@@ -306,14 +326,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		06BEFB4426944EC4006D8451 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06BEFB4526944EC4006D8451 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
