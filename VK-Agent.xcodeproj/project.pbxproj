@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0603002326B005BB004D019F /* customFrendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603002226B005BB004D019F /* customFrendCell.swift */; };
+		0603002526B005DE004D019F /* customFrendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0603002426B005DE004D019F /* customFrendCell.xib */; };
+		0603002726B00915004D019F /* customAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603002626B00915004D019F /* customAvatarView.swift */; };
 		06701DC326A7DA7D00C8DEBC /* findGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06701DC226A7DA7D00C8DEBC /* findGroupController.swift */; };
 		068788762698813000B36F5A /* frendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068788752698813000B36F5A /* frendsViewController.swift */; };
 		0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697CDD0269B64F00055B3F5 /* groupViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0603002226B005BB004D019F /* customFrendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFrendCell.swift; sourceTree = "<group>"; };
+		0603002426B005DE004D019F /* customFrendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customFrendCell.xib; sourceTree = "<group>"; };
+		0603002626B00915004D019F /* customAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customAvatarView.swift; sourceTree = "<group>"; };
 		06701DC226A7DA7D00C8DEBC /* findGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = findGroupController.swift; path = "../../../../vk-agent/VK-Agent/Presentation/allGroups/findGroupController.swift"; sourceTree = "<group>"; };
 		068788752698813000B36F5A /* frendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendsViewController.swift; sourceTree = "<group>"; };
 		0697CDD0269B64F00055B3F5 /* groupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0603002126B005A2004D019F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0603002226B005BB004D019F /* customFrendCell.swift */,
+				0603002426B005DE004D019F /* customFrendCell.xib */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		0687886F2698801A00B36F5A /* frends */ = {
 			isa = PBXGroup;
 			children = (
+				0603002126B005A2004D019F /* Custom */,
 				06C7870126AD49E400F755D3 /* frendsProfile */,
 				068788722698804500B36F5A /* findFrends */,
 				068788712698803900B36F5A /* myFrends */,
@@ -246,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				06D9EBE226AA569500C5216A /* customViewTest.swift */,
+				0603002626B00915004D019F /* customAvatarView.swift */,
 			);
 			path = customView;
 			sourceTree = "<group>";
@@ -309,6 +326,7 @@
 			files = (
 				06C7870526AD689000F755D3 /* Main.storyboard in Resources */,
 				06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */,
+				0603002526B005DE004D019F /* customFrendCell.xib in Resources */,
 				06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +346,7 @@
 				06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */,
 				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06C7870B26ADA69200F755D3 /* newsStorage.swift in Sources */,
+				0603002726B00915004D019F /* customAvatarView.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */,
 				06C7870326AD49FB00F755D3 /* frendProfileController.swift in Sources */,
@@ -341,6 +360,7 @@
 				06A52952269A8DFB0037B747 /* frendModel.swift in Sources */,
 				06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */,
 				0697CDD5269B69DC0055B3F5 /* groupModel.swift in Sources */,
+				0603002326B005BB004D019F /* customFrendCell.swift in Sources */,
 				068788762698813000B36F5A /* frendsViewController.swift in Sources */,
 				06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */,
 				06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */,

@@ -17,7 +17,7 @@ final class frendProfileController: UIViewController{
     @IBOutlet weak var birthdayLabel: UILabel!
     @IBOutlet weak var imageName: avatatImage!
     
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
   
