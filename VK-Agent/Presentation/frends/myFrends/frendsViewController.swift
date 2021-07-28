@@ -38,7 +38,7 @@ class frendsViewController: UIViewController {
             else {
            return
         }
-        let frend = sourceController.frends[indexPath.row]
+        let frend = sourceController.frendSection[indexPath.section][indexPath.row]
         
         //Добавляем проверку, если друг с таким именем - не добавляем (func .contains)
         if !frends.contains(where: {$0.name == frend.name}){

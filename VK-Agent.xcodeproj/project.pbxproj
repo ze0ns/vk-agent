@@ -34,6 +34,8 @@
 		06C7870B26ADA69200F755D3 /* newsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7870A26ADA69200F755D3 /* newsStorage.swift */; };
 		06C7870D26ADAA6700F755D3 /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7870C26ADAA6700F755D3 /* newsTableViewCell.swift */; };
 		06C7871026ADAD1A00F755D3 /* likeControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7870F26ADAD1A00F755D3 /* likeControls.swift */; };
+		06CDB4B226B0F1E3005E6BB5 /* customHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDB4B126B0F1E3005E6BB5 /* customHeader.swift */; };
+		06CDB4B426B0F993005E6BB5 /* lettersControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDB4B326B0F993005E6BB5 /* lettersControl.swift */; };
 		06D5A7BB26A7BC83002229BD /* allGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BA26A7BC83002229BD /* allGroupModel.swift */; };
 		06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */; };
 		06D9EBE326AA569500C5216A /* customViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D9EBE226AA569500C5216A /* customViewTest.swift */; };
@@ -69,6 +71,8 @@
 		06C7870A26ADA69200F755D3 /* newsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsStorage.swift; sourceTree = "<group>"; };
 		06C7870C26ADAA6700F755D3 /* newsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
 		06C7870F26ADAD1A00F755D3 /* likeControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likeControls.swift; sourceTree = "<group>"; };
+		06CDB4B126B0F1E3005E6BB5 /* customHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customHeader.swift; sourceTree = "<group>"; };
+		06CDB4B326B0F993005E6BB5 /* lettersControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lettersControl.swift; sourceTree = "<group>"; };
 		06D5A7BA26A7BC83002229BD /* allGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allGroupModel.swift; sourceTree = "<group>"; };
 		06D5A7BC26A7C4CC002229BD /* groupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsTableViewCell.swift; sourceTree = "<group>"; };
 		06D9EBE226AA569500C5216A /* customViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewTest.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				0603002226B005BB004D019F /* customFrendCell.swift */,
 				0603002426B005DE004D019F /* customFrendCell.xib */,
+				06CDB4B126B0F1E3005E6BB5 /* customHeader.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				06C7870F26ADAD1A00F755D3 /* likeControls.swift */,
+				06CDB4B326B0F993005E6BB5 /* lettersControl.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 				06C7870D26ADAA6700F755D3 /* newsTableViewCell.swift in Sources */,
 				06D9EBE326AA569500C5216A /* customViewTest.swift in Sources */,
 				06C7870926ADA64B00F755D3 /* newsModel.swift in Sources */,
+				06CDB4B426B0F993005E6BB5 /* lettersControl.swift in Sources */,
 				06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */,
 				0697CDD3269B671E0055B3F5 /* groupsCollectionViewCell.swift in Sources */,
 				06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */,
@@ -352,6 +359,7 @@
 				06C7870326AD49FB00F755D3 /* frendProfileController.swift in Sources */,
 				06701DC326A7DA7D00C8DEBC /* findGroupController.swift in Sources */,
 				06C7870026AD492500F755D3 /* avatatImage.swift in Sources */,
+				06CDB4B226B0F1E3005E6BB5 /* customHeader.swift in Sources */,
 				06D5A7BD26A7C4CC002229BD /* groupsTableViewCell.swift in Sources */,
 				06C7871026ADAD1A00F755D3 /* likeControls.swift in Sources */,
 				0697CDD726A73EE10055B3F5 /* groupStorage.swift in Sources */,
