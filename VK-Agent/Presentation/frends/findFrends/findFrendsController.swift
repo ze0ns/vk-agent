@@ -28,8 +28,6 @@ final class findFrendsController: UIViewController{
         //зарегистрируем ячейку, нарисованную в xib
         //установим высоту ячейки вручную 230
         tableView.register(UINib(nibName:customFrendCell.reusedIdentifier, bundle: nil), forCellReuseIdentifier: customFrendCell.reusedIdentifier)
-        tableView.estimatedRowHeight = 230.0
-        //tableView.rowHeight = UITableView.automaticDimension
         
         tableView.register(customHeader.self, forHeaderFooterViewReuseIdentifier: customHeader.reusedIdentifier) //регистрируем нашу секцию через класс
         

@@ -8,11 +8,12 @@
 import UIKit
 final class customHeader: UITableViewHeaderFooterView {
     static let reusedIdentifier = "customHeader"
-    
+    var letter: String = ""
+
     //Добавим надпись
     private let label: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false //устанавливаем констрейны , отключили авторесайзинг
+        label.translatesAutoresizingMaskIntoConstraints = true //устанавливаем констрейны , отключили авторесайзинг
         label.textAlignment = .center  //выровняли текст по центру
         label.textColor = .orange  //установили цвет текста - оранжевый
         return label
@@ -26,7 +27,9 @@ final class customHeader: UITableViewHeaderFooterView {
         setViews()
     }
     func configure(title: String?){
-        label.text = title
+        letter = title!
+        label.text = letter
+
     }
     
     

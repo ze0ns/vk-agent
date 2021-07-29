@@ -438,27 +438,27 @@
         <scene sceneID="Fkc-Bx-Oyu">
             <objects>
                 <viewController title="findFrends" id="p1D-xo-nom" customClass="findFrendsController" customModule="VK_Agent" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yuj-e0-sxD">
+                    <view key="view" contentMode="scaleToFill" id="lt2-XX-sPc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nAa-11-nC9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="40" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-yT-D5u">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="QWR-HI-7zY"/>
+                        <viewLayoutGuide key="safeArea" id="Ovt-Mz-xXC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nAa-11-nC9" firstAttribute="leading" secondItem="QWR-HI-7zY" secondAttribute="leading" id="HAZ-Zw-tnr"/>
-                            <constraint firstItem="nAa-11-nC9" firstAttribute="top" secondItem="QWR-HI-7zY" secondAttribute="top" id="RoQ-MV-gfZ"/>
-                            <constraint firstItem="QWR-HI-7zY" firstAttribute="trailing" secondItem="nAa-11-nC9" secondAttribute="trailing" id="hKK-O0-y2e"/>
-                            <constraint firstItem="QWR-HI-7zY" firstAttribute="bottom" secondItem="nAa-11-nC9" secondAttribute="bottom" id="ww3-LS-oh3"/>
+                            <constraint firstItem="vUa-yT-D5u" firstAttribute="leading" secondItem="Ovt-Mz-xXC" secondAttribute="leading" id="2Ot-9u-gwy"/>
+                            <constraint firstItem="Ovt-Mz-xXC" firstAttribute="bottom" secondItem="vUa-yT-D5u" secondAttribute="bottom" id="FW0-Ph-1fM"/>
+                            <constraint firstItem="Ovt-Mz-xXC" firstAttribute="trailing" secondItem="vUa-yT-D5u" secondAttribute="trailing" id="LJE-8K-ydE"/>
+                            <constraint firstItem="vUa-yT-D5u" firstAttribute="top" secondItem="Ovt-Mz-xXC" secondAttribute="top" id="ztW-F1-X9s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Поиск друзей" id="mrh-qZ-oSa"/>
                     <connections>
-                        <outlet property="tableView" destination="nAa-11-nC9" id="vGc-J4-a8q"/>
+                        <outlet property="tableView" destination="vUa-yT-D5u" id="hyD-oV-Sal"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cA-hA-HLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
