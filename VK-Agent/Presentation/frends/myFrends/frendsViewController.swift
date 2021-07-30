@@ -30,7 +30,7 @@ class frendsViewController: UIViewController {
               destination.frendRow = rows
     }
 
-    @IBAction func addFrends(_ segue: UIStoryboardSegue){
+    @IBAction func addFrend(_ segue: UIStoryboardSegue){
         guard
             segue.identifier == "addFrend",
             let sourceController = segue.source as? findFrendsController,       //приведение к определенному типу

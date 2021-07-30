@@ -9,7 +9,7 @@ final class frendProfileController: UIViewController{
   
     var news: [newsModel] = []
     var myFrend: [frendModel] = []
-    var frendRow: Int = 0
+    var frendRow: Int = 0  //Переменная для сохранения выбора ячейки
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var nameTest: UILabel!
@@ -20,7 +20,6 @@ final class frendProfileController: UIViewController{
    
     override func viewDidLoad() {
         super.viewDidLoad()
-  
         let storage = frendStorage()
         let newsStorege = newsStorage()
         myFrend = storage.frends

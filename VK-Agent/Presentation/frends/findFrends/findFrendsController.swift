@@ -86,5 +86,9 @@ extension findFrendsController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    //добавили принудительный вызов нашего унвин сигвея при нажатии на ячейку (для добавления друзей в список)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "addFrend", sender: nil)
+    }
     
 }
