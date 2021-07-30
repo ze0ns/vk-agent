@@ -49,16 +49,13 @@ extension frendProfileController: UITableViewDelegate, UITableViewDataSource {
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard
-//            let cell = tableView.dequeueReusableCell(withIdentifier: newsTableViewCell.reusedIdentifier, for: indexPath) as? newsTableViewCell //метод который позволяет переиспользовать ячейку. мы принудельно указали ему тип переменной - наш тип
-//        else {
-//            return UITableViewCell()
-//        }
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: newsTableViewCell.reusedIdentifier, for: indexPath) as? newsTableViewCell //метод который позволяет переиспользовать ячейку. мы принудельно указали ему тип переменной - наш тип
+        else {
+            return UITableViewCell()
+        }
         let newsText = news[indexPath.row]
-//        cell.configure(news: newsText)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsTableViewCell", for: indexPath)
-        cell.textLabel?.text = "News: \(newsText.newsText)"
-      
+        cell.configure(news: newsText)
         return cell
     }
 
