@@ -7,6 +7,8 @@
 
 import Foundation
 struct newsModel{
+    var newsImage: String
+    var newsAvtor: String
     var newsDate: String
     var newsText: String
 }

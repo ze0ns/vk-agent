@@ -649,15 +649,15 @@
                                 <rect key="frame" x="0.0" y="74" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="314" id="atR-xO-DRT">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="314"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="allNewsTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="allNewsTableViewCell" rowHeight="401" translatesAutoresizingMaskIntoConstraints="NO" id="atR-xO-DRT" customClass="allNewsTableViewCell" customModule="VK_Agent" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="401"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atR-xO-DRT" id="EUn-1X-pdL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="401"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="7Bn-7m-7ez">
-                                                    <rect key="frame" x="0.0" y="142" width="414" height="165"/>
+                                                    <rect key="frame" x="0.0" y="163" width="414" height="170"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
@@ -665,45 +665,48 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzV-3R-mdX" customClass="avatarView" customModule="VK_Agent" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="11" width="132" height="108"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ren" translatesAutoresizingMaskIntoConstraints="NO" id="WGR-9h-xaf" customClass="avatatImage" customModule="VK_Agent" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="151" height="108"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ren" translatesAutoresizingMaskIntoConstraints="NO" id="WGR-9h-xaf" customClass="avatatImage" customModule="VK_Agent" customModuleProvider="target">
+                                                    <rect key="frame" x="11" y="5" width="130" height="130"/>
                                                     <constraints>
-                                                        <constraint firstItem="WGR-9h-xaf" firstAttribute="centerX" secondItem="WzV-3R-mdX" secondAttribute="centerX" id="AS6-Pc-iuP"/>
-                                                        <constraint firstItem="WGR-9h-xaf" firstAttribute="centerY" secondItem="WzV-3R-mdX" secondAttribute="centerY" id="i5n-YB-5gQ"/>
+                                                        <constraint firstAttribute="width" constant="130" id="F2H-Yb-q8S"/>
                                                     </constraints>
-                                                </view>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-b7-Kkp">
-                                                    <rect key="frame" x="173" y="11" width="42" height="23"/>
+                                                    <rect key="frame" x="150" y="10" width="41.5" height="25.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0v-2W-kqV">
-                                                    <rect key="frame" x="173" y="55" width="42" height="20"/>
+                                                    <rect key="frame" x="150" y="80" width="41.5" height="45"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rZC-I0-Qeh" customClass="likeControl" customModule="VK_Agent" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="333" width="47" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="WzV-3R-mdX" firstAttribute="top" secondItem="qNv-b7-Kkp" secondAttribute="top" id="07k-DB-d1A"/>
-                                                <constraint firstItem="7Bn-7m-7ez" firstAttribute="top" secondItem="E0v-2W-kqV" secondAttribute="bottom" constant="67" id="4Ws-bm-I4G"/>
-                                                <constraint firstItem="WzV-3R-mdX" firstAttribute="top" secondItem="EUn-1X-pdL" secondAttribute="topMargin" id="DtE-4b-Zjc"/>
-                                                <constraint firstItem="WzV-3R-mdX" firstAttribute="centerY" secondItem="E0v-2W-kqV" secondAttribute="centerY" id="FQJ-EF-TBR"/>
-                                                <constraint firstItem="WzV-3R-mdX" firstAttribute="leading" secondItem="EUn-1X-pdL" secondAttribute="leadingMargin" id="NHz-MJ-3Le"/>
+                                                <constraint firstItem="WGR-9h-xaf" firstAttribute="top" secondItem="EUn-1X-pdL" secondAttribute="topMargin" constant="-6" id="N2x-hI-BSo"/>
+                                                <constraint firstItem="qNv-b7-Kkp" firstAttribute="leading" secondItem="WGR-9h-xaf" secondAttribute="trailing" constant="9" id="NIY-4H-5kG"/>
                                                 <constraint firstItem="E0v-2W-kqV" firstAttribute="leading" secondItem="qNv-b7-Kkp" secondAttribute="leading" id="NvQ-Lw-gYO"/>
-                                                <constraint firstItem="qNv-b7-Kkp" firstAttribute="leading" secondItem="WzV-3R-mdX" secondAttribute="trailing" constant="21" id="Tci-Du-qBS"/>
-                                                <constraint firstItem="7Bn-7m-7ez" firstAttribute="top" secondItem="WzV-3R-mdX" secondAttribute="bottom" constant="23" id="aMF-mt-y0T"/>
-                                                <constraint firstItem="E0v-2W-kqV" firstAttribute="top" secondItem="qNv-b7-Kkp" secondAttribute="bottom" constant="21" id="auB-Em-4aU"/>
-                                                <constraint firstAttribute="trailing" secondItem="WzV-3R-mdX" secondAttribute="trailing" constant="262" id="zEw-6n-0Jh"/>
+                                                <constraint firstItem="WGR-9h-xaf" firstAttribute="bottom" secondItem="E0v-2W-kqV" secondAttribute="bottom" constant="10" id="R0i-Pa-hwo"/>
+                                                <constraint firstItem="qNv-b7-Kkp" firstAttribute="top" secondItem="EUn-1X-pdL" secondAttribute="top" constant="10" id="VeO-4r-vD5"/>
+                                                <constraint firstItem="E0v-2W-kqV" firstAttribute="centerY" secondItem="EUn-1X-pdL" secondAttribute="centerY" constant="-98" id="Wwg-wT-jGh"/>
+                                                <constraint firstItem="E0v-2W-kqV" firstAttribute="top" secondItem="qNv-b7-Kkp" secondAttribute="bottom" constant="44.5" id="auB-Em-4aU"/>
+                                                <constraint firstItem="7Bn-7m-7ez" firstAttribute="top" secondItem="WGR-9h-xaf" secondAttribute="bottom" constant="28" id="hFr-zW-lLA"/>
+                                                <constraint firstItem="WGR-9h-xaf" firstAttribute="leading" secondItem="EUn-1X-pdL" secondAttribute="leadingMargin" constant="-9" id="yhN-Oy-GQz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsAvatarImage" destination="WGR-9h-xaf" id="leq-zZ-3uC"/>
+                                            <outlet property="newsDate" destination="E0v-2W-kqV" id="y2Q-o1-zdE"/>
+                                            <outlet property="newsNameAvtor" destination="qNv-b7-Kkp" id="Txk-WX-1va"/>
+                                            <outlet property="newsText" destination="7Bn-7m-7ez" id="vUT-2L-m8f"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -721,6 +724,9 @@
                         <color key="badgeColor" systemColor="systemBlueColor"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="2W1-Xs-hF8" id="Md9-3n-gXH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vU-y3-jnq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
