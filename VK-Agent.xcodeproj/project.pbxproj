@@ -26,6 +26,7 @@
 		06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4726944EC6006D8451 /* Assets.xcassets */; };
 		06BEFB4B26944EC6006D8451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4926944EC6006D8451 /* LaunchScreen.storyboard */; };
 		06BEFB5826946DB4006D8451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB5726946DB4006D8451 /* LoginViewController.swift */; };
+		06C1802926B5015A008553E7 /* allNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C1802826B5015A008553E7 /* allNewsController.swift */; };
 		06C786FE26AD452900F755D3 /* avatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C786FD26AD452900F755D3 /* avatarView.swift */; };
 		06C7870026AD492500F755D3 /* avatatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C786FF26AD492500F755D3 /* avatatImage.swift */; };
 		06C7870326AD49FB00F755D3 /* frendProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C7870226AD49FB00F755D3 /* frendProfileController.swift */; };
@@ -63,6 +64,7 @@
 		06BEFB4A26944EC6006D8451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BEFB4C26944EC6006D8451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06BEFB5726946DB4006D8451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		06C1802826B5015A008553E7 /* allNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allNewsController.swift; sourceTree = "<group>"; };
 		06C786FD26AD452900F755D3 /* avatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarView.swift; sourceTree = "<group>"; };
 		06C786FF26AD492500F755D3 /* avatatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatatImage.swift; sourceTree = "<group>"; };
 		06C7870226AD49FB00F755D3 /* frendProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendProfileController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 		06BEFB5526946CFC006D8451 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				06C1802726B50147008553E7 /* news */,
 				06D5A7B726A7BBDC002229BD /* allGroups */,
 				0697CDCF269B64CD0055B3F5 /* groups */,
 				0687886F2698801A00B36F5A /* frends */,
@@ -233,6 +236,14 @@
 				06BEFB5726946DB4006D8451 /* LoginViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		06C1802726B50147008553E7 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				06C1802826B5015A008553E7 /* allNewsController.swift */,
+			);
+			path = news;
 			sourceTree = "<group>";
 		};
 		06C7870126AD49E400F755D3 /* frendsProfile */ = {
@@ -353,6 +364,7 @@
 				06A52956269A8EA30037B747 /* frendProfileModel.swift in Sources */,
 				06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */,
 				06C7870B26ADA69200F755D3 /* newsStorage.swift in Sources */,
+				06C1802926B5015A008553E7 /* allNewsController.swift in Sources */,
 				0603002726B00915004D019F /* customAvatarView.swift in Sources */,
 				06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */,
 				0697CDD1269B64F00055B3F5 /* groupViewController.swift in Sources */,
