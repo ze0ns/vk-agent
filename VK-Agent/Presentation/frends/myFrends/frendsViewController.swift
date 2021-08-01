@@ -14,7 +14,7 @@ class frendsViewController: UIViewController {
     var frendSection = [[frendModel]]()  //Храним масив масивов для секции
     private var firstLetters: [String] = []
     var frends = [frendModel]()
-    var rows = 1
+    var rows = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +64,8 @@ class frendsViewController: UIViewController {
         
        // Добавляем проверку, если друг с таким именем - не добавляем (func .contains)
         if !frends.contains(where: {$0.name == frend.name}){
-            frends.append(frend)
+           //frends.append(frend)
+            frendSection[indexPath.section].append(frend)
             tableView.reloadData()
             
         }
@@ -94,9 +95,10 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(frend: frend)
         return cell
     }
-    
+    //необходимо добавить у каждого друга ID , передавать его между контроллерами
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       rows = indexPath.row
+        let frend = frendSection[indexPath.section][indexPath.row]
+        rows = indexPath.section
  
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -112,7 +114,7 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //Если нажата кнопка - Удалить
         if editingStyle == .delete{
-            //Удаляем город из масива
+            //Удаляем друга из масива
             //frendSection[indexPath.section][indexPath.row].remove(at: indexPath.row)
             frendSection[indexPath.section].remove(at: indexPath.row)
             //Удаляем ячейку из таблицы

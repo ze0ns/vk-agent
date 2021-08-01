@@ -93,5 +93,6 @@ final class customAvatarView: UIView {
             imageView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         }
         isBig.toggle()
+
     }
 }

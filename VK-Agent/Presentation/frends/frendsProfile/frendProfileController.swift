@@ -29,6 +29,8 @@ final class frendProfileController: UIViewController{
         liveCityLabel.text! = myFrend[frendRow].frendProfile.City
         birthdayLabel?.text = myFrend[frendRow].frendProfile.birthday
         nameTest.text = myFrend[frendRow].name
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
 
@@ -56,6 +58,7 @@ extension frendProfileController: UITableViewDelegate, UITableViewDataSource {
         }
         let newsText = news[indexPath.row]
         cell.configure(news: newsText)
+        print(newsText)
         return cell
     }
 

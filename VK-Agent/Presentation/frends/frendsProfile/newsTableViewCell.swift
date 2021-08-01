@@ -7,11 +7,12 @@
 import UIKit
 final class newsTableViewCell: UITableViewCell {
     static let reusedIdentifier = "newsTableViewCell" //мы не сможем её вызвать дальше класса
-    @IBOutlet weak var dateOfNews: UILabel!
-    @IBOutlet weak var newsLabel: UITextView!
+
+    @IBOutlet var newsTextLabel: UITextView!
+    @IBOutlet var dateOfNews: UILabel!
     
     func configure(news: newsModel){
-        newsLabel.text! = news.newsText
+        newsTextLabel.text = news.newsText
         dateOfNews.text = news.newsDate
     }
 
