@@ -9,7 +9,10 @@ final class frendProfileController: UIViewController{
   
     var news: [newsModel] = []
     var myFrend: [frendModel] = []
-    var frendRow: Int = 0  //Переменная для сохранения выбора ячейки
+    var frendName: String? //Передаваемое имя выбранного друга
+    var avatarName: String?
+    var birthdayText: String?
+    var CityText: String?
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var nameTest: UILabel!
@@ -25,16 +28,17 @@ final class frendProfileController: UIViewController{
         myFrend = storage.frends
         news = newsStorege.news
         
-        imageName.image = UIImage(named:myFrend[frendRow].avatar)
-        liveCityLabel.text! = myFrend[frendRow].frendProfile.City
-        birthdayLabel?.text = myFrend[frendRow].frendProfile.birthday
-        nameTest.text = myFrend[frendRow].name
-        
+        imageName.image = UIImage(named:avatarName ?? "stiv")
+        liveCityLabel.text = CityText
+        birthdayLabel?.text = birthdayText
+        nameTest.text = frendName
+
+     
         
         tableView.dataSource = self
         tableView.delegate = self
 
-        print(myFrend[frendRow])
+ 
         
     }
  

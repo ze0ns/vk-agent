@@ -21,6 +21,7 @@
 		06A52959269A90C50037B747 /* frendStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A52958269A90C50037B747 /* frendStorage.swift */; };
 		06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5295A269AE2050037B747 /* frendTableViewCell.swift */; };
 		06A5295D269AF1220037B747 /* findFrendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5295C269AF1220037B747 /* findFrendsController.swift */; };
+		06ADB48C26B9433600240304 /* avatarViewTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ADB48B26B9433600240304 /* avatarViewTap.swift */; };
 		06BEFB3F26944EC4006D8451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB3E26944EC4006D8451 /* AppDelegate.swift */; };
 		06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BEFB4026944EC4006D8451 /* SceneDelegate.swift */; };
 		06BEFB4826944EC6006D8451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BEFB4726944EC6006D8451 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		06A52958269A90C50037B747 /* frendStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendStorage.swift; sourceTree = "<group>"; };
 		06A5295A269AE2050037B747 /* frendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frendTableViewCell.swift; sourceTree = "<group>"; };
 		06A5295C269AF1220037B747 /* findFrendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findFrendsController.swift; sourceTree = "<group>"; };
+		06ADB48B26B9433600240304 /* avatarViewTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarViewTap.swift; sourceTree = "<group>"; };
 		06BEFB3B26944EC4006D8451 /* VK-Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BEFB3E26944EC4006D8451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BEFB4026944EC4006D8451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				06A5295A269AE2050037B747 /* frendTableViewCell.swift */,
 				068788752698813000B36F5A /* frendsViewController.swift */,
+				06ADB48B26B9433600240304 /* avatarViewTap.swift */,
 			);
 			path = myFrends;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				06A52952269A8DFB0037B747 /* frendModel.swift in Sources */,
 				06A5295B269AE2050037B747 /* frendTableViewCell.swift in Sources */,
 				0697CDD5269B69DC0055B3F5 /* groupModel.swift in Sources */,
+				06ADB48C26B9433600240304 /* avatarViewTap.swift in Sources */,
 				0603002326B005BB004D019F /* customFrendCell.swift in Sources */,
 				068788762698813000B36F5A /* frendsViewController.swift in Sources */,
 				06BEFB4126944EC4006D8451 /* SceneDelegate.swift in Sources */,

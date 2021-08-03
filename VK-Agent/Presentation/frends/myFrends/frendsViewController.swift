@@ -14,7 +14,10 @@ class frendsViewController: UIViewController {
     var frendSection = [[frendModel]]()  //Храним масив масивов для секции
     private var firstLetters: [String] = []
     var frends = [frendModel]()
-    var rows = 0
+    public var  frendName: String? //Передаваемое имя выбранного друга
+    public var  avatarName: String?
+    public var  birthdayText: String?
+    public var  CityText: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +52,11 @@ class frendsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 guard segue.identifier == "moveToProfile" else { return }
                 guard let destination = segue.destination as? frendProfileController else { return }
-              destination.frendRow = rows
-    }
+                destination.frendName = frendName
+                destination.avatarName = avatarName
+                destination.birthdayText = birthdayText
+                destination.CityText = CityText
+        }
 
     @IBAction func addFrend(_ segue: UIStoryboardSegue){
         guard
@@ -98,7 +104,11 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
     //необходимо добавить у каждого друга ID , передавать его между контроллерами
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let frend = frendSection[indexPath.section][indexPath.row]
-        rows = indexPath.section
+        
+        frendName = frend.name
+        avatarName = frend.avatar
+        birthdayText = frend.frendProfile.birthday
+        CityText = frend.frendProfile.City
  
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

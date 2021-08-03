@@ -119,5 +119,12 @@ final class LoginViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    private func loadingDot(){
+        
+        
+        //loginButton.layer
+        
+    }
+    
     
 }
