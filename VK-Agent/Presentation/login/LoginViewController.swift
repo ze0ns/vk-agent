@@ -74,6 +74,7 @@ final class LoginViewController: UIViewController {
     @IBAction private func loginButtonAction(_ sender: UIButton) {
        
             print("Login buttton presset")
+            loginLoading(true)
                
         
     }
@@ -118,6 +119,28 @@ final class LoginViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    
+    
+}
+extension LoginViewController{
+
+
+ func loginLoading(_ animated: Bool) {
+    super.viewWillAppear(true)
+    let circlePath = UIBezierPath(arcCenter: CGPoint(x: 100,y: 100), radius: 100.0, startAngle: 0.0, endAngle:CGFloat(Double.pi * 2), clockwise: true)
+    let shapeLayer = CAShapeLayer()
+    shapeLayer.path = circlePath.cgPath
+    shapeLayer.position = CGPoint(x: 100, y: 100)
+    shapeLayer.fillColor = UIColor.clear.cgColor
+    shapeLayer.strokeColor = UIColor.blue.cgColor
+    shapeLayer.lineWidth = 6.0
+    let one : NSNumber = 1
+    let two : NSNumber = 13
+    shapeLayer.lineDashPattern = [one,two]
+    shapeLayer.lineCap = CAShapeLayerLineCap.round
+    view.layer.addSublayer(shapeLayer)
+
+}
     
     
 }
