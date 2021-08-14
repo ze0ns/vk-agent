@@ -7,6 +7,15 @@
 
 import UIKit
 
+final class Session{
+    
+    private init(){} //  Закрываем инит
+    
+    static let shared = Session() // Мы переиспользуем один и тот же объект
+    
+    var token: String = "" //Token VK
+    var userId: Int = 0    //ID пользователя
+}
 final class LoginViewController: UIViewController {
     
     @IBOutlet private var titleImageView: UIImageView!
@@ -18,6 +27,8 @@ final class LoginViewController: UIViewController {
     @IBOutlet private var passwordTextField: UITextField!
     @IBOutlet private var loginButton: UIButton!
    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
