@@ -97,7 +97,7 @@ extension frendsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     //необходимо добавить у каждого друга ID , передавать его между контроллерами
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let frend = frendSection[indexPath.section][indexPath.row]
+      //  let frend = frendSection[indexPath.section][indexPath.row]
         rows = indexPath.section
  
     }

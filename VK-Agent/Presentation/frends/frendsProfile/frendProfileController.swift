@@ -34,7 +34,6 @@ final class frendProfileController: UIViewController{
         tableView.dataSource = self
         tableView.delegate = self
 
-        print(myFrend[frendRow])
         
     }
  
